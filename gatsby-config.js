@@ -29,6 +29,16 @@ module.exports = {
     },
     // added
     "gatsby-plugin-sass",
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `Montserrat`,
+          `source sans-serif\:400,700`, // you can also specify font weights and styles
+        ],
+        display: "swap",
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
