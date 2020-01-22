@@ -1,0 +1,27 @@
+.cross-menu {
+    position: relative;
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    overflow: hidden;
+}
+
+.cross-menu:before,
+.cross-menu:after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    margin-top: -1px;
+    background: #000;
+}
+
+.cross-menu:before {
+    transform: rotate(45deg);
+}
+
+.cross-menu:after {
+    transform: rotate(-45deg);
+}

@@ -1,0 +1,14 @@
+.burger-menu {
+    width: 23px;
+    height: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: center;
+}
+
+.burger-menu__line {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+}
