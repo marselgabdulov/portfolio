@@ -1,9 +1,9 @@
 import React from "react"
 import "./layout.scss"
-
 import Nav from "./Nav/Nav"
 import NavPannel from "./NavPannel/NavPannel"
 import NavpannelState from "../context/navpannel/NavpannelState"
+import Footer from "./Footer/Footer"
 
 const Layout = ({ children }) => {
   return (
@@ -18,17 +18,10 @@ const Layout = ({ children }) => {
         <div className="content">
           <main>{children}</main>
         </div>
+        <Footer />
       </NavpannelState>
     </>
   )
 }
 
 export default Layout
-
-{
-  /* <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer> */
-}
