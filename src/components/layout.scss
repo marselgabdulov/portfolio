@@ -4,22 +4,90 @@ html,
 body {
   font-family: 'IBM Plex Mono', monospace;
   background-color: #FFFFFF;
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1 0 auto;
+}
+
+.link {
+  position: relative;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.link:after {
+  content: "";
+  height: 1px;
+  width: 0;
+  position: absolute;
+  left: 50%;
+  bottom: -5px;
+  background: black;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  -webkit-transition: 0.35s all cubic-bezier(0.77, 0, 0.175, 1);
+  -moz-transition: 0.35s all cubic-bezier(0.77, 0, 0.175, 1);
+  transition: 0.35s all cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.link:hover:after {
+  width: 100%;
 }
 
 // mobile-landscape
-@media screen and (max-width: 1023px) and (orientation: landscape) {}
+@media screen and (max-width: 1023px) and (orientation: landscape) {
+  p {
+    font-size: 1.25em;
+  }
+}
 
 // mobile-portrait
-@media (max-width: 599px) and (orientation: portrait) {}
+@media (max-width: 599px) and (orientation: portrait) {
+  p {
+    font-size: 1.25em;
+  }
+}
 
 // tublet-portrait
-@media (min-width: 600px) and (orientation: portrait) {}
+@media (min-width: 600px) and (orientation: portrait) {
+  p {
+    font-size: 1.25em;
+    line-height: 1.5em;
+  }
+}
 
 // tablet-landscape
-@media (min-width: 900px) and (orientation: landscape) {}
+@media (min-width: 900px) and (orientation: landscape) {
+  p {
+    font-size: 1.25em;
+    line-height: 1.5em;
+  }
+}
 
 // desktop/laptop
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+  p {
+    font-size: 1.25em;
+    line-height: 1.5em;
+  }
+}
 
 // desktop x-large
-@media (min-width: 1800px) {}
+@media (min-width: 1800px) {
+  p {
+    font-size: 1.25em;
+  }
+}

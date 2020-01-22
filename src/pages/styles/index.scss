@@ -1,0 +1,145 @@
+.intro {
+    svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .intro__contacts {
+        text-decoration: underline;
+    }
+}
+
+.intro__link {
+    text-transform: uppercase;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5em 1em;
+    transition: all 0.2s ease-in-out;
+}
+
+// mobile-landscape
+@media screen and (max-width: 1023px) and (orientation: landscape) {
+    .intro {
+        width: 95%;
+        margin-left: 2.5%;
+        margin-top: 2.5%;
+
+    }
+
+    h1 {
+        font-weight: 600;
+        font-size: 33px;
+        line-height: 40px;
+    }
+
+    .intro__link {
+        width: 130px;
+    }
+}
+
+// mobile-portrait
+@media (max-width: 599px) and (orientation: portrait) {
+    .intro {
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 20%;
+        height: calc(100vh - 240px);
+    }
+
+    h1 {
+        font-weight: 600;
+        font-size: 33px;
+        line-height: 40px;
+    }
+
+    .intro__link {
+        width: 120px;
+    }
+}
+
+// tublet-portrait
+@media (min-width: 600px) and (orientation: portrait) {
+    .intro {
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 10%;
+        height: calc(100vh - 220px);
+    }
+
+    h1 {
+        font-weight: 600;
+        font-size: 55px;
+        line-height: 70px;
+    }
+
+    .intro__link {
+        width: 120px;
+    }
+}
+
+// tablet-landscape
+@media (min-width: 900px) and (orientation: landscape) {
+    .intro {
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 10%;
+        height: calc(100vh - 250px);
+    }
+
+    h1 {
+        font-weight: 600;
+        font-size: 34px;
+    }
+
+    .intro__link {
+        width: 120px;
+    }
+}
+
+// desktop/laptop
+@media (min-width: 1200px) {
+    .intro {
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 10%;
+        height: calc(100vh - 350px);
+    }
+
+    h1 {
+        font-weight: 600;
+        font-size: 42px;
+    }
+
+    .intro__link {
+        width: 120px;
+
+        &:hover {
+            width: 130px;
+        }
+    }
+}
+
+// desktop x-large
+@media (min-width: 1800px) {
+    .intro {
+        width: 60%;
+        margin-left: 20%;
+        margin-top: 10%;
+        height: calc(100vh - 350px);
+    }
+
+    h1 {
+        font-weight: 600;
+        font-size: 48px;
+    }
+
+    .intro__link {
+        width: 120px;
+
+        &:hover {
+            width: 130px;
+        }
+    }
+}

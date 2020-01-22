@@ -33,10 +33,18 @@ module.exports = {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          `Montserrat`,
-          `source sans-serif\:400,700`, // you can also specify font weights and styles
+          `IBM Plex Mono`,
+          `source monospace\:400,600`, // you can also specify font weights and styles
         ],
         display: "swap",
+      },
+    },
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /assets/, // See below to configure properly
+        },
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

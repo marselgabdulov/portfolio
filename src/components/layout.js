@@ -8,10 +8,6 @@ import Footer from "./Footer/Footer"
 const Layout = ({ children }) => {
   return (
     <>
-      <link
-        href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,700&display=swap"
-        rel="stylesheet"
-      ></link>
       <NavpannelState>
         <Nav />
         <NavPannel />
@@ -25,3 +21,5 @@ const Layout = ({ children }) => {
 }
 
 export default Layout
+
+// Icons made by <a href="https://www.flaticon.com/authors/vitaly-gorbachev" title="Vitaly Gorbachev">Vitaly Gorbachev</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>

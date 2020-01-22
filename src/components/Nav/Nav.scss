@@ -20,37 +20,6 @@ a {
     outline: 0;
 }
 
-.nav__link {
-    position: relative;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-}
-
-.nav__link:after {
-    content: "";
-    height: 1px;
-    width: 0;
-    position: absolute;
-    left: 50%;
-    bottom: -5px;
-    background: black;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
-    transform: translateX(-50%);
-    -webkit-transition: 0.35s all cubic-bezier(0.77, 0, 0.175, 1);
-    -moz-transition: 0.35s all cubic-bezier(0.77, 0, 0.175, 1);
-    transition: 0.35s all cubic-bezier(0.77, 0, 0.175, 1);
-}
-
-.nav__link:hover:after {
-    width: 100%;
-}
-
-
 // mobile-landscape
 @media screen and (max-width: 1023px) and (orientation: landscape) {
     .nav {

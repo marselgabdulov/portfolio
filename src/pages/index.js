@@ -1,17 +1,32 @@
 import React from "react"
+import "./styles/index.scss"
 import { Link } from "gatsby"
+import Place from "../assets/place.svg"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
-)
+function IndexPage() {
+  return (
+    <Layout>
+      <SEO title="Home" />
+      <section className="intro">
+        <h1>Фронтенд разработчик с навыками дизайна</h1>
+        <p>
+          <Place /> Москва, Россия
+        </p>
+        <p>Статус: доступен</p>
+        <div className="intro__link">
+          <Link to="/projects">Мои работы</Link>
+        </div>
+        <p>
+          <Link className="intro__contacts" to="/contacts">
+            Контакты
+          </Link>
+        </p>
+      </section>
+    </Layout>
+  )
+}
 
 export default IndexPage

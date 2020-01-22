@@ -21,16 +21,16 @@ function Nav() {
           </Link>
         </div>
         <div className="nav__links">
-          <Link className="nav__link" to="/about">
+          <Link className="link" to="/about">
             обо мне
           </Link>
-          <Link className="nav__link" to="/projects">
+          <Link className="link" to="/projects">
             работы
           </Link>
-          <Link className="nav__link" to="/edu">
+          <Link className="link" to="/edu">
             учебные работы
           </Link>
-          <Link className="nav__link" to="/resume">
+          <Link className="link" to="/resume">
             резюме
           </Link>
         </div>
