@@ -16,6 +16,10 @@ const Layout = ({ children }) => {
 
   return (
     <div>
+      <link
+        href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,700&display=swap"
+        rel="stylesheet"
+      ></link>
       <Header siteTitle={data.site.siteMetadata.title} />
 
       <div>
