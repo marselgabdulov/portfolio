@@ -8,6 +8,9 @@ import Footer from "./Footer/Footer"
 const Layout = ({ children }) => {
   return (
     <>
+      <div className="turn">
+        <span>Пожалуйста переверните</span>
+      </div>
       <NavpannelState>
         <Nav />
         <NavPannel />

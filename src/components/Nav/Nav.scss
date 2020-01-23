@@ -20,30 +20,6 @@ a {
     outline: 0;
 }
 
-// mobile-landscape
-@media screen and (max-width: 1023px) and (orientation: landscape) {
-    .nav {
-        height: 60px;
-    }
-
-    .nav__wrapper {
-        width: 95%;
-        margin-left: 2.5%;
-    }
-
-    .nav__logo {
-        width: auto;
-    }
-
-    .nav__links {
-        width: 90%;
-    }
-
-    .nav__menu-button {
-        display: none;
-    }
-}
-
 // mobile-portrait
 @media (max-width: 599px) and (orientation: portrait) {
     .nav {
