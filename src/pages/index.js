@@ -11,7 +11,8 @@ function IndexPage() {
     <Layout>
       <SEO title="Home" />
       <section className="intro">
-        <h1>Фронтенд разработчик с навыками дизайна</h1>
+        <h1>Фронтенд разработчик</h1>
+        <p>Специализируюсь на React, интересуюсь дизайном</p>
         <p>
           <Place /> Москва, Россия
         </p>
