@@ -1,10 +1,12 @@
 import React from "react"
 import Layout from "../components/layout"
 import "./styles/angel8.scss"
+import SEO from "../components/seo"
 
 function AngelPage() {
   return (
     <Layout>
+      <SEO title="angel8bar.ru" />
       <section className="angel-page">
         <h2>Angel 8</h2>
         <p>

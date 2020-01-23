@@ -1,10 +1,12 @@
 import React from "react"
 import Layout from "../components/layout"
 import "./styles/alexey-gorbunov.scss"
+import SEO from "../components/seo"
 
 function AlexeyPage() {
   return (
     <Layout>
+      <SEO title="alexeygorbunov.com" />
       <section className="alexey-page">
         <h2>alexey-gorbunov</h2>
         <p>

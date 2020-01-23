@@ -9,7 +9,7 @@ import SEO from "../components/seo"
 function IndexPage() {
   return (
     <Layout>
-      <SEO title="Home" />
+      <SEO title="Главная" />
       <section className="intro">
         <h1>Фронтенд разработчик</h1>
         <p>Специализируюсь на React, интересуюсь дизайном</p>
