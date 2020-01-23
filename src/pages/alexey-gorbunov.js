@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import "./styles/alexey-gorbunov.scss"
 import SEO from "../components/seo"
+import { Link } from "gatsby"
 
 function AlexeyPage() {
   return (
@@ -70,6 +71,9 @@ function AlexeyPage() {
         </p>
         <p>
           <b>Разработка: </b> 29.07.2019 - 21.08.2019
+        </p>
+        <p>
+          <b>Следующий проект:</b> <Link to="/reklamada">reklama-da.ru</Link>
         </p>
       </section>
     </Layout>

@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import "./styles/angel8.scss"
 import SEO from "../components/seo"
+import { Link } from "gatsby"
 
 function AngelPage() {
   return (
@@ -25,7 +26,16 @@ function AngelPage() {
           <b>Предоставлено заказчиком: </b>текст, фотографии, видео
         </p>
         <p>
-          <b>Пожелание заказчика: </b>Использование темной темы
+          Логотип и фирменный стиль был создан дизайнером{" "}
+          <b>Катериной Семаевой</b> (
+          <a
+            href="https://www.instagram.com/sema_katerina/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Instagram
+          </a>
+          )
         </p>
         <p>
           <b>Вдохновлялся: </b>
@@ -70,6 +80,10 @@ function AngelPage() {
         </p>
         <p>
           <b>Разработка: </b> 13.01.2019 - 28.01.2019
+        </p>
+        <p>
+          <b>Следующий проект</b>:{" "}
+          <Link to="/alexey-gorbunov">alexeygorbunov.com</Link>
         </p>
       </section>
     </Layout>

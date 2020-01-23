@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import "./styles/reklamada.scss"
 import SEO from "../components/seo"
+import { Link } from "gatsby"
 
 function ReklamadaPage() {
   return (
@@ -80,6 +81,9 @@ function ReklamadaPage() {
         </p>
         <p>
           <b>Разработка: </b> 09.01.2020 - 16.01.2020
+        </p>
+        <p>
+          <b>Следующий проект:</b> <Link to="/angel8">angel8bar.ru</Link>
         </p>
       </section>
     </Layout>
