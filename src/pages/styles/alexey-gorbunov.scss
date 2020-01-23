@@ -1,0 +1,73 @@
+.alexey-page {
+    a {
+        text-decoration: underline;
+    }
+
+    h2 {
+        text-transform: uppercase;
+    }
+}
+
+// mobile-portrait
+@media (max-width: 599px) and (orientation: portrait) {
+    .alexey-page {
+        margin-top: 2vh;
+        margin-bottom: 3em;
+        height: auto;
+
+        h2 {
+            font-size: 2em;
+        }
+    }
+}
+
+// tublet-portrait
+@media (min-width: 600px) and (orientation: portrait) {
+    .alexey-page {
+        margin-top: 10vh;
+        margin-bottom: 10vh;
+        height: 65vh;
+
+        h2 {
+            font-size: 2em;
+        }
+    }
+}
+
+// tablet-landscape
+@media (min-width: 900px) and (orientation: landscape) {
+    .alexey-page {
+        margin-top: 7vh;
+        margin-bottom: 4vh;
+        height: 67vh;
+
+        h2 {
+            font-size: 2em;
+        }
+    }
+}
+
+// desktop/laptop
+@media (min-width: 1200px) {
+    .alexey-page {
+        margin-top: 7vh;
+        margin-bottom: 1vh;
+        height: 67vh;
+
+        h2 {
+            font-size: 2em;
+        }
+    }
+}
+
+// desktop x-large
+@media (min-width: 1800px) {
+    .alexey-page {
+        margin-top: 10vh;
+        height: 70vh;
+
+        h2 {
+            font-size: 2em;
+        }
+    }
+}
