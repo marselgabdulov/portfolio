@@ -1,0 +1,138 @@
+.project-card {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2em;
+}
+
+.project-card__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 2em;
+  background-color: #fafafa;
+}
+
+.project-card__name {
+  color: blue;
+  font-size: 1.25em;
+}
+
+.project-card__role {
+  color: black;
+}
+
+.project-card__image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+// mobile-portrait
+@media (max-width: 599px) and (orientation: portrait) {
+  .project-card,
+  .project-card.reverse {
+    flex-direction: column-reverse;
+    height: 75vh;
+  }
+
+  .project-card__info,
+  .project-card__image {
+    width: 100%;
+    height: 50%;
+  }
+}
+
+// tublet-portrait
+@media (min-width: 600px) and (orientation: portrait) {
+  .project-card,
+  .project-card.reverse {
+    flex-direction: column-reverse;
+    height: 90vh;
+  }
+
+  .project-card__info,
+  .project-card__image {
+    width: 100%;
+    height: 50%;
+  }
+}
+
+// tablet-landscape
+@media (min-width: 900px) and (orientation: landscape) {
+  .project-card {
+    height: 370px;
+  }
+
+  .project-card__info,
+  .project-card__image {
+    height: 100%;
+  }
+
+  .project-card__info {
+    width: 50%;
+  }
+
+  .project-card__image {
+    width: 50%;
+  }
+
+  .project-card.reverse {
+    flex-direction: row-reverse;
+  }
+}
+
+// desktop/laptop
+@media (min-width: 1200px) {
+  .project-card {
+    height: 380px;
+  }
+
+  .project-card__info,
+  .project-card__image {
+    height: 100%;
+  }
+
+  .project-card__info {
+    width: 50%;
+  }
+
+  .project-card__image {
+    width: 50%;
+  }
+
+  .project-card.reverse {
+    flex-direction: row-reverse;
+  }
+}
+
+// desktop x-large
+@media (min-width: 1800px) {
+  .project-card {
+    height: 500px;
+  }
+
+  .project-card__info,
+  .project-card__image {
+    height: 100%;
+  }
+
+  .project-card__info {
+    width: 50%;
+  }
+
+  .project-card__image {
+    width: 50%;
+  }
+
+  .project-card.reverse {
+    flex-direction: row-reverse;
+  }
+}
