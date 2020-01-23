@@ -12,7 +12,7 @@ function ProjectsPage(props) {
       <section className="projects">
         <ProjectCard
           image={props.data.reklama.childImageSharp.fluid.src}
-          innerLink="reklama-da"
+          innerLink="reklamada"
           role="дизайн и разработка"
           outerLink="reklama-da.ru"
         />
