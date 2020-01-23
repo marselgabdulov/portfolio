@@ -1,14 +1,38 @@
 // mobile-portrait
-@media (max-width: 599px) and (orientation: portrait) {}
+@media (max-width: 599px) and (orientation: portrait) {
+    .projects {
+        margin-bottom: 3em;
+    }
+}
 
 // tublet-portrait
-@media (min-width: 600px) and (orientation: portrait) {}
+@media (min-width: 600px) and (orientation: portrait) {
+    .projects {
+        margin-top: 3em;
+        margin-bottom: 4em;
+    }
+}
 
 // tablet-landscape
-@media (min-width: 900px) and (orientation: landscape) {}
+@media (min-width: 900px) and (orientation: landscape) {
+    .projects {
+        margin-top: 3em;
+        margin-bottom: 4em;
+    }
+}
 
 // desktop/laptop
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+    .projects {
+        margin-top: 4em;
+        margin-bottom: 4em;
+    }
+}
 
 // desktop x-large
-@media (min-width: 1800px) {}
+@media (min-width: 1800px) {
+    .projects {
+        margin-top: 5em;
+        margin-bottom: 5em;
+    }
+}
