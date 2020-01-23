@@ -19,31 +19,9 @@
     transition: all 0.2s ease-in-out;
 }
 
-// mobile-landscape
-@media screen and (max-width: 1023px) and (orientation: landscape) {
-    .intro {
-        width: 95%;
-        margin-left: 2.5%;
-        margin-top: 2.5%;
-
-    }
-
-    h1 {
-        font-weight: 600;
-        font-size: 33px;
-        line-height: 40px;
-    }
-
-    .intro__link {
-        width: 130px;
-    }
-}
-
 // mobile-portrait
 @media (max-width: 599px) and (orientation: portrait) {
     .intro {
-        width: 90%;
-        margin-left: 5%;
         margin-top: 10%;
         height: calc(100vh - 200px);
     }
@@ -62,8 +40,6 @@
 // tublet-portrait
 @media (min-width: 600px) and (orientation: portrait) {
     .intro {
-        width: 90%;
-        margin-left: 5%;
         margin-top: 10%;
         height: calc(100vh - 220px);
     }
@@ -82,8 +58,6 @@
 // tablet-landscape
 @media (min-width: 900px) and (orientation: landscape) {
     .intro {
-        width: 80%;
-        margin-left: 10%;
         margin-top: 10%;
         height: calc(100vh - 250px);
     }
@@ -101,8 +75,6 @@
 // desktop/laptop
 @media (min-width: 1200px) {
     .intro {
-        width: 80%;
-        margin-left: 10%;
         margin-top: 10%;
         height: calc(100vh - 350px);
     }
@@ -124,8 +96,6 @@
 // desktop x-large
 @media (min-width: 1800px) {
     .intro {
-        width: 60%;
-        margin-left: 20%;
         margin-top: 10%;
         height: calc(100vh - 350px);
     }
