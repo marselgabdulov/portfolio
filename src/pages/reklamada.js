@@ -1,10 +1,12 @@
 import React from "react"
 import Layout from "../components/layout"
 import "./styles/reklamada.scss"
+import SEO from "../components/seo"
 
 function ReklamadaPage() {
   return (
     <Layout>
+      <SEO title="reklama-da.ru" />
       <section className="reklama-page">
         <h2>reklama-da</h2>
         <p>
