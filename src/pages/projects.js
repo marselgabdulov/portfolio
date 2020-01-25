@@ -46,7 +46,7 @@ export const fluidImage = graphql`
 
 export const pageQuery = graphql`
   query {
-    angel: file(relativePath: { eq: "projects/angel8.png" }) {
+    angel: file(relativePath: { eq: "projects/angel.jpg" }) {
       ...fluidImage
     }
     alex: file(relativePath: { eq: "projects/alex.png" }) {

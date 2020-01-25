@@ -11,7 +11,7 @@
   align-items: center;
   justify-content: center;
   line-height: 2em;
-  background-color: #fafafa;
+  background-color: #fcfcfc;
 }
 
 .project-card__name {
@@ -37,10 +37,11 @@
 
 // mobile-portrait
 @media (max-width: 599px) and (orientation: portrait) {
+
   .project-card,
   .project-card.reverse {
     flex-direction: column-reverse;
-    height: 75vh;
+    height: 70vh;
   }
 
   .project-card__info,
@@ -52,6 +53,7 @@
 
 // tublet-portrait
 @media (min-width: 600px) and (orientation: portrait) {
+
   .project-card,
   .project-card.reverse {
     flex-direction: column-reverse;
@@ -69,6 +71,7 @@
 @media (min-width: 900px) and (orientation: landscape) {
   .project-card {
     height: 370px;
+    margin-bottom: 3em;
   }
 
   .project-card__info,
@@ -93,6 +96,7 @@
 @media (min-width: 1200px) {
   .project-card {
     height: 380px;
+    margin-bottom: 3em;
   }
 
   .project-card__info,
@@ -117,6 +121,7 @@
 @media (min-width: 1800px) {
   .project-card {
     height: 500px;
+    margin-bottom: 4em;
   }
 
   .project-card__info,
