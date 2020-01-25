@@ -1,4 +1,4 @@
-.reklama-page {
+.project-page {
     a {
         text-decoration: underline;
     }
@@ -10,7 +10,7 @@
 
 // mobile-portrait
 @media (max-width: 599px) and (orientation: portrait) {
-    .reklama-page {
+    .project-page {
         margin-top: 2vh;
         margin-bottom: 3em;
         height: auto;
@@ -23,7 +23,7 @@
 
 // tublet-portrait
 @media (min-width: 600px) and (orientation: portrait) {
-    .reklama-page {
+    .project-page {
         margin-top: 10vh;
         margin-bottom: 10vh;
         height: 65vh;
@@ -36,7 +36,7 @@
 
 // tablet-landscape
 @media (min-width: 900px) and (orientation: landscape) {
-    .reklama-page {
+    .project-page {
         margin-top: 7vh;
         margin-bottom: 4vh;
         height: 67vh;
@@ -49,7 +49,7 @@
 
 // desktop/laptop
 @media (min-width: 1200px) {
-    .reklama-page {
+    .project-page {
         margin-top: 7vh;
         margin-bottom: 1vh;
         height: 67vh;
@@ -62,7 +62,7 @@
 
 // desktop x-large
 @media (min-width: 1800px) {
-    .reklama-page {
+    .project-page {
         margin-top: 10vh;
         height: 70vh;
 

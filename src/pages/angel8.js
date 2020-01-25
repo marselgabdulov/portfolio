@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
-import "./styles/angel8.scss"
+import "./styles/project.scss"
 import SEO from "../components/seo"
 import { Link } from "gatsby"
 
@@ -8,7 +8,7 @@ function AngelPage() {
   return (
     <Layout>
       <SEO title="angel8bar.ru" />
-      <section className="angel-page">
+      <section className="project-page">
         <h2>Angel 8</h2>
         <p>
           <a
@@ -67,16 +67,6 @@ function AngelPage() {
             Gatsby
           </a>
           , React
-        </p>
-        <p>
-          <b>Деплой: </b>{" "}
-          <a
-            href="https://pages.github.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Github Pages
-          </a>
         </p>
         <p>
           <b>Разработка: </b> 13.01.2019 - 28.01.2019

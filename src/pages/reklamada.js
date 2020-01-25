@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
-import "./styles/reklamada.scss"
+import "./styles/project.scss"
 import SEO from "../components/seo"
 import { Link } from "gatsby"
 
@@ -8,7 +8,7 @@ function ReklamadaPage() {
   return (
     <Layout>
       <SEO title="reklama-da.ru" />
-      <section className="reklama-page">
+      <section className="project-page">
         <h2>reklama-da</h2>
         <p>
           <a
@@ -68,16 +68,6 @@ function ReklamadaPage() {
             Gatsby
           </a>
           , React
-        </p>
-        <p>
-          <b>Деплой: </b>{" "}
-          <a
-            href="https://pages.github.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Github Pages
-          </a>
         </p>
         <p>
           <b>Разработка: </b> 09.01.2020 - 16.01.2020
