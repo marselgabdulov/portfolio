@@ -14,20 +14,23 @@ function ProjectsPage(props) {
           image={props.data.reklama.childImageSharp.fluid.src}
           innerLink="reklamada"
           role="дизайн и разработка"
-          outerLink="reklama-da.ru"
+          outerLink="https://reklama-da.ru/"
+          name="reklama-da.ru"
         />
         <ProjectCard
           reverse={true}
           image={props.data.alex.childImageSharp.fluid.src}
           innerLink="alexey-gorbunov"
           role="дизайн и разработка"
-          outerLink="alexeygorbunov.com"
+          name="alexeygorbunov.com"
+          outerLink="https://alexeygorbunov.com/"
         />
         <ProjectCard
           image={props.data.angel.childImageSharp.fluid.src}
           innerLink="angel8"
           role="дизайн и разработка"
-          outerLink="angel8bar.ru"
+          name="angel8bar.ru"
+          outerLink="https://angel8bar.ru/"
         />
       </section>
     </Layout>
