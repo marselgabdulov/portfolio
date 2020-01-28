@@ -1,14 +1,62 @@
+.contacts-page__info {
+  display: flex;
+  flex-direction: column;
+
+  font-size: 1.2em;
+  line-height: 1.75em;
+}
+
 // mobile-portrait
-@media (max-width: 599px) and (orientation: portrait) {}
+@media (max-width: 599px) and (orientation: portrait) {
+  .contacts-page {
+    height: 75vh;
+
+    h2 {
+      margin-top: 10%;
+    }
+  }
+}
 
 // tublet-portrait
-@media (min-width: 600px) and (orientation: portrait) {}
+@media (min-width: 600px) and (orientation: portrait) {
+  .contacts-page {
+    height: 77vh;
+
+    h2 {
+      margin-top: 10%;
+    }
+  }
+}
 
 // tablet-landscape
-@media (min-width: 900px) and (orientation: landscape) {}
+@media (min-width: 900px) and (orientation: landscape) {
+  .contacts-page {
+    height: 67vh;
+
+    h2 {
+      margin-top: 11%;
+    }
+  }
+}
 
 // desktop/laptop
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+  .contacts-page {
+    height: 60vh;
+
+    h2 {
+      margin-top: 11%;
+    }
+  }
+}
 
 // desktop x-large
-@media (min-width: 1800px) {}
+@media (min-width: 1800px) {
+  .contacts-page {
+    height: 70vh;
+
+    h2 {
+      margin-top: 10%;
+    }
+  }
+}
