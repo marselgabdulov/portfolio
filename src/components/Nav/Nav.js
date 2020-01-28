@@ -3,6 +3,7 @@ import "./Nav.scss"
 import { Link } from "gatsby"
 import BurgerMenu from "../BurgerMenu/BurgerMenu"
 import LangButton from "../LangButton/LangButton"
+import { connect } from "react-redux"
 import { toggleNavPannel } from "../../state/app"
 
 function Nav({ isNavPannelOpened, isEnglish, dispatch }) {
@@ -15,17 +16,29 @@ function Nav({ isNavPannelOpened, isEnglish, dispatch }) {
           </Link>
         </div>
         <div className="nav__links">
-          <Link className="link" to="/about">
+          <Link className="link" to="/about" activeStyle={{ color: "#f36302" }}>
             {isEnglish ? "about" : "обо мне"}
           </Link>
-          <Link className="link" to="/projects">
+          <Link
+            className="link"
+            to="/projects"
+            activeStyle={{ color: "#f36302" }}
+          >
             {isEnglish ? "projects" : "работы"}
           </Link>
-          <Link className="link" to="/pet-projects">
+          <Link
+            className="link"
+            to="/pet-projects"
+            activeStyle={{ color: "#f36302" }}
+          >
             {isEnglish ? "pet projects" : "учебные работы"}
           </Link>
-          <Link className="link" to="/resume">
-            {isEnglish ? "resume" : "резюме"}
+          <Link
+            className="link"
+            to="/contacts"
+            activeStyle={{ color: "#f36302" }}
+          >
+            {isEnglish ? "contacts" : "контакты"}
           </Link>
           <LangButton />
         </div>
@@ -40,4 +53,10 @@ function Nav({ isNavPannelOpened, isEnglish, dispatch }) {
   )
 }
 
-export default Nav
+export default connect(
+  state => ({
+    isNavPannelOpened: state.app.isNavPannelOpened,
+    isEnglish: state.app.isEnglish,
+  }),
+  null
+)(Nav)

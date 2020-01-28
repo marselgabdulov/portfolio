@@ -1,5 +1,6 @@
 import React from "react"
 import "./Footer.scss"
+import { connect } from "react-redux"
 
 function Footer({ isEnglish }) {
   return (
@@ -27,4 +28,9 @@ function Footer({ isEnglish }) {
   )
 }
 
-export default Footer
+export default connect(
+  state => ({
+    isEnglish: state.app.isEnglish,
+  }),
+  null
+)(Footer)

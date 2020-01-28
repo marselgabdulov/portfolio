@@ -4,6 +4,7 @@ import "./NavPannel.scss"
 import CrossMenu from "../CrossMenu/CrossMenu"
 import { toggleNavPannel } from "../../state/app"
 import LangButton from "../LangButton/LangButton"
+import { connect } from "react-redux"
 
 function NavPannel({ isNavPannelOpened, isEnglish, dispatch }) {
   return (
@@ -50,10 +51,10 @@ function NavPannel({ isNavPannelOpened, isEnglish, dispatch }) {
           </div>
           <div className="menu__item">
             <Link
-              to="/resume"
+              to="/contacts"
               onClick={() => dispatch(toggleNavPannel(!isNavPannelOpened))}
             >
-              {isEnglish ? "resume" : "резюме"}
+              {isEnglish ? "contacts" : "контакты"}
             </Link>
           </div>
           <div className="nav-pannel__phone">
@@ -93,4 +94,10 @@ function NavPannel({ isNavPannelOpened, isEnglish, dispatch }) {
   )
 }
 
-export default NavPannel
+export default connect(
+  state => ({
+    isNavPannelOpened: state.app.isNavPannelOpened,
+    isEnglish: state.app.isEnglish,
+  }),
+  null
+)(NavPannel)
