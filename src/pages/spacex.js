@@ -3,15 +3,16 @@ import Layout from "../components/layout"
 import "./styles/project.scss"
 import SEO from "../components/seo"
 import { Link } from "gatsby"
+import { connect } from "react-redux"
 
-function SpaceXPage() {
+function SpaceXPage({ isEnglish }) {
   return (
     <Layout>
       <SEO title="SpaceX" />
       <section className="project-page">
         <h2>SpaceX Launches</h2>
         <p>
-          <b>Ссылка: </b>
+          <b>{isEnglish ? "Link: " : "Ссылка: "}</b>
           <a
             href="https://morning-mesa-87055.herokuapp.com/"
             target="_blank"
@@ -21,11 +22,14 @@ function SpaceXPage() {
           </a>
         </p>
         <p>
-          <b>Задача: </b>Создать приложение, показывающие информацию по запускам
-          SpaceX
+          <b>{isEnglish ? "Task: " : "Задача: "}</b>
+          {isEnglish
+            ? "Create a simple application to show information about SpaceX launches"
+            : "Создать простое приложение, показывающие информацию по запускам SpaceX"}
         </p>
+
         <p>
-          <b>Вдохновлялся: </b>
+          <b>{isEnglish ? "Inspired by: " : "Вдохновлялся: "}</b>
           <a
             href="https://www.youtube.com/watch?v=7wzR4Ig5pTI"
             target="_blank"
@@ -51,7 +55,8 @@ function SpaceXPage() {
           </a>
         </p>
         <p>
-          <b>Использовал в дизайне: </b>шрифт{" "}
+          <b>{isEnglish ? "Design with: " : "Использовал в дизайне: "}</b>
+          {isEnglish ? "font " : "шрифт "}
           <a
             href="https://fonts.google.com/specimen/Courier+Prime"
             target="_blank"
@@ -61,10 +66,13 @@ function SpaceXPage() {
           </a>
         </p>
         <p>
-          <b>Использовал в разработке: </b> create-react-app, graphql, appollo
+          <b>
+            {isEnglish ? "Development with: " : "Использовал в разработке: "}
+          </b>{" "}
+          create-react-app, graphql, appollo
         </p>
         <p>
-          <b>Деплой: </b>{" "}
+          <b>{isEnglish ? "Deploy with: " : "Деплой: "}</b>
           <a
             href="https://www.heroku.com/"
             target="_blank"
@@ -74,7 +82,7 @@ function SpaceXPage() {
           </a>
         </p>
         <p>
-          <b>Репозиторий: </b>
+          <b>{isEnglish ? "Repo: " : "Репозиторий: "}</b>
           <a
             href="https://github.com/marselgabdulov/spacex_react"
             target="_blank"
@@ -84,11 +92,15 @@ function SpaceXPage() {
           </a>
         </p>
         <p>
-          <b>Разработка: </b> 25.01.2020 - 26.01.2020
+          <b>{isEnglish ? "Development time: " : "Время разработки: "}</b>{" "}
+          25.01.2020 - 26.01.2020
         </p>
       </section>
     </Layout>
   )
 }
 
-export default SpaceXPage
+export default connect(
+  state => ({ isEnglish: state.app.isEnglish }),
+  null
+)(SpaceXPage)

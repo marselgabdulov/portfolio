@@ -13,7 +13,6 @@ function PetProjectsPage(props) {
         <ProjectCard
           image={props.data.tesla.childImageSharp.fluid.src}
           innerLink="spacex"
-          role="разработка"
           name="spaceX heroku"
           outerLink="https://morning-mesa-87055.herokuapp.com/"
         />

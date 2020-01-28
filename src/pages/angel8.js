@@ -3,14 +3,16 @@ import Layout from "../components/layout"
 import "./styles/project.scss"
 import SEO from "../components/seo"
 import { Link } from "gatsby"
+import { connect } from "react-redux"
 
-function AngelPage() {
+function AngelPage({ isEnglish }) {
   return (
     <Layout>
       <SEO title="angel8bar.ru" />
       <section className="project-page">
         <h2>Angel 8</h2>
         <p>
+          <b>{isEnglish ? "Link: " : "Ссылка: "}</b>
           <a
             href="https://angel8bar.ru/"
             target="_blank"
@@ -20,14 +22,16 @@ function AngelPage() {
           </a>
         </p>
         <p>
-          <b>Задача: </b>Создать сайт для ресторана/бара &laquo;Angel 8&raquo;
+          <b>{isEnglish ? "Task: " : "Задача: "}</b>
+          {isEnglish
+            ? "Develop website for restaurant Angel8"
+            : "Создать сайт для ресторана Angel8"}
         </p>
         <p>
-          <b>Предоставлено заказчиком: </b>текст, фотографии, видео
-        </p>
-        <p>
-          Логотип и фирменный стиль был создан дизайнером{" "}
-          <b>Катериной Семаевой</b> (
+          <b>
+            {isEnglish ? "Logo creator: " : "Логотип был создан дизайнером: "}
+          </b>
+          {isEnglish ? "Katerina Semaeva: " : "Катериной Семаевой "} (
           <a
             href="https://www.instagram.com/sema_katerina/"
             target="_blank"
@@ -38,7 +42,7 @@ function AngelPage() {
           )
         </p>
         <p>
-          <b>Вдохновлялся: </b>
+          <b>{isEnglish ? "Inspired by: " : "Вдохновлялся: "}</b>
           <a
             href="https://www.awwwards.com/"
             target="_blank"
@@ -48,7 +52,8 @@ function AngelPage() {
           </a>
         </p>
         <p>
-          <b>Использовал в дизайне: </b>шрифт{" "}
+          <b>{isEnglish ? "Design with: " : "Использовал в дизайне: "}</b>
+          {isEnglish ? "font " : "шрифт "}
           <a
             href="https://fonts.google.com/specimen/Montserrat"
             target="_blank"
@@ -58,7 +63,9 @@ function AngelPage() {
           </a>
         </p>
         <p>
-          <b>Использовал в разработке: </b>{" "}
+          <b>
+            {isEnglish ? "Development with: " : "Использовал в разработке: "}
+          </b>{" "}
           <a
             href="https://www.gatsbyjs.org"
             target="_blank"
@@ -69,10 +76,11 @@ function AngelPage() {
           , React
         </p>
         <p>
-          <b>Разработка: </b> 13.01.2019 - 28.01.2019
+          <b>{isEnglish ? "Development time: " : "Время разработки: "}</b>{" "}
+          13.01.2019 - 28.01.2019
         </p>
         <p>
-          <b>Следующий проект</b>:{" "}
+          <b>{isEnglish ? "Next project: " : "Следующий проект: "}</b>{" "}
           <Link to="/alexey-gorbunov">alexeygorbunov.com</Link>
         </p>
       </section>
@@ -80,4 +88,7 @@ function AngelPage() {
   )
 }
 
-export default AngelPage
+export default connect(
+  state => ({ isEnglish: state.app.isEnglish }),
+  null
+)(AngelPage)

@@ -3,14 +3,16 @@ import Layout from "../components/layout"
 import "./styles/project.scss"
 import SEO from "../components/seo"
 import { Link } from "gatsby"
+import { connect } from "react-redux"
 
-function AlexeyPage() {
+function AlexeyPage({ isEnglish }) {
   return (
     <Layout>
       <SEO title="alexeygorbunov.com" />
       <section className="project-page">
         <h2>alexey-gorbunov</h2>
         <p>
+          <b>{isEnglish ? "Link: " : "Ссылка: "}</b>
           <a
             href="https://alexeygorbunov.com/"
             target="_blank"
@@ -20,16 +22,13 @@ function AlexeyPage() {
           </a>
         </p>
         <p>
-          <b>Задача: </b>Создать сайт-визитку для ведущего Алексея Горбунова
+          <b>{isEnglish ? "Task: " : "Задача: "}</b>
+          {isEnglish
+            ? "Develop personal website for master of ceremony Alexey Gorbunov"
+            : "Создать сайт-визитку для ведущего Алексея Горбунова"}
         </p>
         <p>
-          <b>Предоставлено заказчиком: </b>текст, фотографии, видео
-        </p>
-        <p>
-          <b>Пожелание заказчика: </b>Использование темной темы
-        </p>
-        <p>
-          <b>Вдохновлялся: </b>
+          <b>{isEnglish ? "Inspired by: " : "Вдохновлялся: "}</b>
           <a
             href="https://maxkorzh.live/"
             target="_blank"
@@ -39,7 +38,8 @@ function AlexeyPage() {
           </a>
         </p>
         <p>
-          <b>Использовал в дизайне: </b>шрифт{" "}
+          <b>{isEnglish ? "Design with: " : "Использовал в дизайне: "}</b>
+          {isEnglish ? "font " : "шрифт "}
           <a
             href="https://fonts.google.com/specimen/Montserrat"
             target="_blank"
@@ -49,7 +49,9 @@ function AlexeyPage() {
           </a>
         </p>
         <p>
-          <b>Использовал в разработке: </b>{" "}
+          <b>
+            {isEnglish ? "Development with: " : "Использовал в разработке: "}
+          </b>{" "}
           <a
             href="https://www.gatsbyjs.org"
             target="_blank"
@@ -60,14 +62,19 @@ function AlexeyPage() {
           , React
         </p>
         <p>
-          <b>Разработка: </b> 29.07.2019 - 21.08.2019
+          <b>{isEnglish ? "Development time: " : "Время разработки: "}</b>{" "}
+          29.07.2019 - 21.08.2019
         </p>
         <p>
-          <b>Следующий проект:</b> <Link to="/reklamada">reklama-da.ru</Link>
+          <b>{isEnglish ? "Next project: " : "Следующий проект: "}</b>{" "}
+          <Link to="/reklamada">reklama-da.ru</Link>
         </p>
       </section>
     </Layout>
   )
 }
 
-export default AlexeyPage
+export default connect(
+  state => ({ isEnglish: state.app.isEnglish }),
+  null
+)(AlexeyPage)

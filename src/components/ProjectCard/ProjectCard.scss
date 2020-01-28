@@ -12,15 +12,15 @@
   justify-content: center;
   line-height: 2em;
   background-color: #fcfcfc;
+
+  a {
+    margin-bottom: 1em;
+  }
 }
 
 .project-card__name {
   font-size: 1.25em;
   text-decoration: underline;
-}
-
-.project-card__role {
-  color: black;
 }
 
 .project-card__image {

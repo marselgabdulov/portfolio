@@ -10,7 +10,7 @@ import SEO from "../components/seo"
 function IndexPage({ isEnglish }) {
   return (
     <Layout>
-      <SEO title="Главная" />
+      <SEO title={isEnglish ? "Main" : "Главная"} />
       <section className="intro">
         <h1>{isEnglish ? "Frontend developer" : "Фронтенд разработчик"}</h1>
         <p>

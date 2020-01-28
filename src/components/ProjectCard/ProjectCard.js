@@ -1,8 +1,16 @@
 import React from "react"
 import "./ProjectCard.scss"
 import { Link } from "gatsby"
+import { connect } from "react-redux"
 
-function ProjectCard({ reverse, image, innerLink, role, outerLink, name }) {
+function ProjectCard({
+  reverse,
+  image,
+  innerLink,
+  outerLink,
+  name,
+  isEnglish,
+}) {
   return (
     <div className={reverse ? "project-card reverse" : "project-card"}>
       <div className="project-card__info">
@@ -14,9 +22,8 @@ function ProjectCard({ reverse, image, innerLink, role, outerLink, name }) {
         >
           {name}
         </a>
-        <span className="project-card__role">{role}</span>
         <Link to={innerLink} className="button">
-          Подробнее
+          {isEnglish ? "details" : "Подробнее"}
         </Link>
       </div>
       <Link
@@ -28,4 +35,9 @@ function ProjectCard({ reverse, image, innerLink, role, outerLink, name }) {
   )
 }
 
-export default ProjectCard
+export default connect(
+  state => ({
+    isEnglish: state.app.isEnglish,
+  }),
+  null
+)(ProjectCard)
