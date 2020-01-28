@@ -2,7 +2,6 @@ import React from "react"
 import { Link } from "gatsby"
 import "./NavPannel.scss"
 import CrossMenu from "../CrossMenu/CrossMenu"
-import { connect } from "react-redux"
 import { toggleNavPannel } from "../../state/app"
 import LangButton from "../LangButton/LangButton"
 
@@ -94,10 +93,4 @@ function NavPannel({ isNavPannelOpened, isEnglish, dispatch }) {
   )
 }
 
-export default connect(
-  state => ({
-    isNavPannelOpened: state.app.isNavPannelOpened,
-    isEnglish: state.app.isEnglish,
-  }),
-  null
-)(NavPannel)
+export default NavPannel

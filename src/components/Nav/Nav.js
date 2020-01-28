@@ -3,7 +3,6 @@ import "./Nav.scss"
 import { Link } from "gatsby"
 import BurgerMenu from "../BurgerMenu/BurgerMenu"
 import LangButton from "../LangButton/LangButton"
-import { connect } from "react-redux"
 import { toggleNavPannel } from "../../state/app"
 
 function Nav({ isNavPannelOpened, isEnglish, dispatch }) {
@@ -41,10 +40,4 @@ function Nav({ isNavPannelOpened, isEnglish, dispatch }) {
   )
 }
 
-export default connect(
-  state => ({
-    isNavPannelOpened: state.app.isNavPannelOpened,
-    isEnglish: state.app.isEnglish,
-  }),
-  null
-)(Nav)
+export default Nav
