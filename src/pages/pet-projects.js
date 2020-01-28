@@ -4,11 +4,12 @@ import SEO from "../components/seo"
 import Layout from "../components/layout"
 import ProjectCard from "../components/ProjectCard/ProjectCard"
 import { graphql } from "gatsby"
+import { connect } from "react-redux"
 
-function PetProjectsPage(props) {
+function PetProjectsPage({ isEnglish, ...props }) {
   return (
     <Layout>
-      <SEO title="Учебные работы" />
+      <SEO title={isEnglish ? "Pet projects" : "Учебные работы"} />
       <section className="projects">
         <ProjectCard
           image={props.data.tesla.childImageSharp.fluid.src}
@@ -39,4 +40,7 @@ export const pageQuery = graphql`
   }
 `
 
-export default PetProjectsPage
+export default connect(
+  state => ({ isEnglish: state.app.isEnglish }),
+  null
+)(PetProjectsPage)

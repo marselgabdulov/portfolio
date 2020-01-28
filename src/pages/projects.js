@@ -4,11 +4,12 @@ import SEO from "../components/seo"
 import Layout from "../components/layout"
 import ProjectCard from "../components/ProjectCard/ProjectCard"
 import { graphql } from "gatsby"
+import { connect } from "react-redux"
 
-function ProjectsPage(props) {
+function ProjectsPage({ isEnglish, ...props }) {
   return (
     <Layout>
-      <SEO title="Работы" />
+      <SEO title={isEnglish ? "Projects" : "Работы"} />
       <section className="projects">
         <ProjectCard
           image={props.data.reklama.childImageSharp.fluid.src}
@@ -58,4 +59,7 @@ export const pageQuery = graphql`
   }
 `
 
-export default ProjectsPage
+export default connect(
+  state => ({ isEnglish: state.app.isEnglish }),
+  null
+)(ProjectsPage)
