@@ -66,13 +66,16 @@
   flex-direction: column;
   justify-content: space-between;
   height: auto;
+  width: auto;
+
+  .menu__item {
+    line-height: 2.5em;
+  }
 
   .menu__item a {
-    font-weight: 500;
     text-decoration: none;
     color: black;
     text-transform: uppercase;
-    line-height: 2.5em;
   }
 
   .nav-pannel__email,
