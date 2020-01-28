@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 import ProjectCard from "../components/ProjectCard/ProjectCard"
 import { graphql } from "gatsby"
 
-function EduPage(props) {
+function PetProjectsPage(props) {
   return (
     <Layout>
       <SEO title="Учебные работы" />
@@ -40,4 +40,4 @@ export const pageQuery = graphql`
   }
 `
 
-export default EduPage
+export default PetProjectsPage
