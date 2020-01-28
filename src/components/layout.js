@@ -16,7 +16,7 @@ const Layout = ({ children, isEnglish, isNavPannelOpened }) => {
       <div className="content">
         <main>{children}</main>
       </div>
-      <Footer />
+      <Footer isEnglish={isEnglish} />
     </>
   )
 }
