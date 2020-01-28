@@ -1,8 +1,9 @@
-import React, { useContext } from "react"
+import React from "react"
 import { Link } from "gatsby"
 import "./NavPannel.scss"
-import NavpannelContext from "../../context/navpannel/navpannelContext"
 import CrossMenu from "../CrossMenu/CrossMenu"
+import { connect } from "react-redux"
+import { toggleNavPannel } from "../../state/app"
 
 const links = [
   {
@@ -23,18 +24,14 @@ const links = [
   },
 ]
 
-function NavPannel() {
-  const navpannelContext = useContext(NavpannelContext)
-  const { navpannel, closeNavpannel } = navpannelContext
-
-  function handleClose() {
-    closeNavpannel()
-  }
-
+function NavPannel({ isNavPannelOpened, dispatch }) {
   return (
     <>
-      <div className={navpannel === true ? "nav-opened" : "nav-closed"}>
-        <button className="nav-pannel__close-button" onClick={handleClose}>
+      <div className={isNavPannelOpened ? "nav-opened" : "nav-closed"}>
+        <button
+          className="nav-pannel__close-button"
+          onClick={() => dispatch(toggleNavPannel(!isNavPannelOpened))}
+        >
           <div className="button-icon">
             <CrossMenu />
           </div>
@@ -48,7 +45,10 @@ function NavPannel() {
         <div className="nav-pannel__menu">
           {links.map((item, index) => (
             <div className="menu__item" key={index}>
-              <Link to={item.to} onClick={handleClose}>
+              <Link
+                to={item.to}
+                onClick={() => dispatch(toggleNavPannel(!isNavPannelOpened))}
+              >
                 {item.name}
               </Link>
             </div>
@@ -92,4 +92,7 @@ function NavPannel() {
   )
 }
 
-export default NavPannel
+export default connect(
+  state => ({ isNavPannelOpened: state.app.isNavPannelOpened }),
+  null
+)(NavPannel)

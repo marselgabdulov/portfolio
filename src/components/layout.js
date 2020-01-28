@@ -2,7 +2,6 @@ import React from "react"
 import "./layout.scss"
 import Nav from "./Nav/Nav"
 import NavPannel from "./NavPannel/NavPannel"
-import NavpannelState from "../context/navpannel/NavpannelState"
 import Footer from "./Footer/Footer"
 
 const Layout = ({ children }) => {
@@ -11,14 +10,12 @@ const Layout = ({ children }) => {
       <div className="turn">
         <span>Пожалуйста переверните</span>
       </div>
-      <NavpannelState>
-        <Nav />
-        <NavPannel />
-        <div className="content">
-          <main>{children}</main>
-        </div>
-        <Footer />
-      </NavpannelState>
+      <Nav />
+      <NavPannel />
+      <div className="content">
+        <main>{children}</main>
+      </div>
+      <Footer />
     </>
   )
 }

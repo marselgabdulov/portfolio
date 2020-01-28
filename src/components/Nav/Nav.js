@@ -1,17 +1,11 @@
-import React, { useContext } from "react"
+import React from "react"
 import "./Nav.scss"
 import { Link } from "gatsby"
-import NavpannelContext from "../../context/navpannel/navpannelContext"
 import BurgerMenu from "../BurgerMenu/BurgerMenu"
+import { connect } from "react-redux"
+import { toggleNavPannel } from "../../state/app"
 
-function Nav() {
-  const navpannelContext = useContext(NavpannelContext)
-  const { openNavpannel } = navpannelContext
-
-  function handleOpen() {
-    openNavpannel()
-  }
-
+function Nav({ isNavPannelOpened, dispatch }) {
   return (
     <nav className="nav">
       <div className="nav__wrapper">
@@ -34,7 +28,10 @@ function Nav() {
             резюме
           </Link>
         </div>
-        <div className="nav__menu-button" onClick={handleOpen}>
+        <div
+          className="nav__menu-button"
+          onClick={() => dispatch(toggleNavPannel(!isNavPannelOpened))}
+        >
           <BurgerMenu />
         </div>
       </div>
@@ -42,4 +39,7 @@ function Nav() {
   )
 }
 
-export default Nav
+export default connect(
+  state => ({ isNavPannelOpened: state.app.isNavPannelOpened }),
+  null
+)(Nav)
