@@ -25,7 +25,6 @@ function ContactsPage({ isEnglish }) {
             <b>Instagram: </b>
             <a
               href="https://www.instagram.com/marsel_gabdulov/"
-              title="instagram"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -36,7 +35,6 @@ function ContactsPage({ isEnglish }) {
             <b>Facebook: </b>
             <a
               href="https://www.facebook.com/marsel.gabdulov"
-              title="facebook"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -47,7 +45,6 @@ function ContactsPage({ isEnglish }) {
             <b>Github: </b>
             <a
               href="https://github.com/marselgabdulov"
-              title="facebook"
               target="_blank"
               rel="noopener noreferrer"
             >

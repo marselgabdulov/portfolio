@@ -12,23 +12,62 @@ function ProjectsPage({ isEnglish, ...props }) {
       <SEO title={isEnglish ? "Projects" : "Работы"} />
       <section className="projects">
         <ProjectCard
-          image={props.data.reklama.childImageSharp.fluid.src}
-          innerLink="reklamada"
-          outerLink="https://reklama-da.ru/"
-          name="reklama-da.ru"
+          image={props.data.toronto.childImageSharp.fluid.src}
+          link="https://toronto-crime-cd3b1.firebaseapp.com/"
+          name="Toronto crime activity 2018"
+          description={
+            isEnglish
+              ? "App showing Toronto crime activity in 2018"
+              : "Приложение, показывающее криминальную активность в Торонто в 2018 году"
+          }
+          tools="React, Deckgl"
         />
         <ProjectCard
           reverse={true}
-          image={props.data.alex.childImageSharp.fluid.src}
-          innerLink="alexey-gorbunov"
-          name="alexeygorbunov.com"
-          outerLink="https://alexeygorbunov.com/"
+          image={props.data.reklama.childImageSharp.fluid.src}
+          link="https://reklama-da.ru/"
+          name="reklama-da.ru"
+          description={
+            isEnglish
+              ? "Landing page for small advertising company"
+              : "Лендинг для небольшой студии рекламы"
+          }
+          tools="React(Gatsby)"
         />
         <ProjectCard
+          image={props.data.alex.childImageSharp.fluid.src}
+          name="alexeygorbunov.com"
+          link="https://alexeygorbunov.com/"
+          description={
+            isEnglish
+              ? "Personal website for master of ceremonies Alexey Gorbunov"
+              : "Сайт визитка для ведущего Алексея Горбунова"
+          }
+          tools="React(Gatsby)"
+        />
+        <ProjectCard
+          reverse={true}
           image={props.data.angel.childImageSharp.fluid.src}
-          innerLink="angel8"
           name="angel8bar.ru"
-          outerLink="https://angel8bar.ru/"
+          link="https://angel8bar.ru/"
+          description={
+            isEnglish
+              ? "Website for Angel8 restaturant"
+              : "Сайт для ресторана Angel8"
+          }
+          tools="React(Gatsby)"
+        />
+        <ProjectCard
+          image={props.data.tesla.childImageSharp.fluid.src}
+          name="spaceX launches"
+          link="https://spacex-launches-3b0bf.firebaseapp.com/"
+          description={
+            isEnglish
+              ? "Pet project app showing SpaceX launches info"
+              : "Учебный проект, показывающий информацию по запускам SpaceX"
+          }
+          tools="React, Graphql"
+          githubLink="https://github.com/marselgabdulov/spacex_react"
         />
       </section>
     </Layout>
@@ -50,10 +89,16 @@ export const pageQuery = graphql`
     angel: file(relativePath: { eq: "projects/angel.jpg" }) {
       ...fluidImage
     }
+    toronto: file(relativePath: { eq: "projects/toronto.png" }) {
+      ...fluidImage
+    }
     alex: file(relativePath: { eq: "projects/alex.png" }) {
       ...fluidImage
     }
     reklama: file(relativePath: { eq: "projects/reklama-da.png" }) {
+      ...fluidImage
+    }
+    tesla: file(relativePath: { eq: "projects/tesla.jpg" }) {
       ...fluidImage
     }
   }

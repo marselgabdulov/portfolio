@@ -3,6 +3,7 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 2em;
+  line-height: 10px;
 }
 
 .project-card__info {
@@ -15,6 +16,11 @@
 
   a {
     margin-bottom: 1em;
+  }
+
+  .project-card__description {
+    text-align: center;
+    width: 80%;
   }
 }
 

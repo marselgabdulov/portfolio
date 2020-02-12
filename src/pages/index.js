@@ -14,7 +14,9 @@ function IndexPage({ isEnglish }) {
       <section className="intro">
         <h1>{isEnglish ? "Frontend developer" : "Фронтенд разработчик"}</h1>
         <p>
-          {isEnglish ? " Specializing in React" : "Специализируюсь на React"}
+          {isEnglish
+            ? "HTML, CSS, JS, React, some experience with Ruby on Rails"
+            : "HTML, CSS, JS, React, небольшой опыт с Ruby on Rails"}
         </p>
         <p>
           <Place /> {isEnglish ? "Moscow, Russia" : "Москва, Россия"}

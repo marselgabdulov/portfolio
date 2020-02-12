@@ -11,32 +11,25 @@ function Nav({ isNavPannelOpened, isEnglish, dispatch }) {
     <nav className="nav">
       <div className="nav__wrapper">
         <div className="nav__logo">
-          <Link to="/" title="вернуться на главную">
+          <Link
+            to="/"
+            title={isEnglish ? "back to home page" : "вернуться на главную"}
+          >
             {isEnglish ? "Marsel Gabdulov" : "Марсель Габдулов"}
           </Link>
         </div>
         <div className="nav__links">
-          <Link className="link" to="/about" activeStyle={{ color: "#f36302" }}>
-            {isEnglish ? "about" : "обо мне"}
-          </Link>
           <Link
             className="link"
             to="/projects"
-            activeStyle={{ color: "#f36302" }}
+            activeStyle={{ fontWeight: "bold" }}
           >
             {isEnglish ? "projects" : "работы"}
           </Link>
           <Link
             className="link"
-            to="/pet-projects"
-            activeStyle={{ color: "#f36302" }}
-          >
-            {isEnglish ? "pet projects" : "учебные работы"}
-          </Link>
-          <Link
-            className="link"
             to="/contacts"
-            activeStyle={{ color: "#f36302" }}
+            activeStyle={{ fontWeight: "bold" }}
           >
             {isEnglish ? "contacts" : "контакты"}
           </Link>
