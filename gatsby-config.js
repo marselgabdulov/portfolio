@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `mars-dev.me`,
+    pathPrefix: "/portfolio",
+    title: `marsdev.ru`,
     description: `Марсель Габдулов. Фронтенд разработчик. Cпециализируюсь на React, интересуюсь дизайном`,
     author: `marsel.gabdulov@gmail.com`,
   },

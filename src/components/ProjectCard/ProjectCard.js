@@ -1,6 +1,5 @@
 import React from "react"
 import "./ProjectCard.scss"
-import { Link } from "gatsby"
 import { connect } from "react-redux"
 
 function ProjectCard({
@@ -36,11 +35,13 @@ function ProjectCard({
           </a>
         )}
       </div>
-      <Link
-        to={link}
+      <a
+        href={link}
+        target="_blank"
+        rel="noopener noreferrer"
         className="project-card__image"
         style={{ backgroundImage: `url(${image})` }}
-      ></Link>
+      ></a>
     </div>
   )
 }

@@ -25,14 +25,7 @@ function NavPannel({ isNavPannelOpened, isEnglish, dispatch }) {
         </div>
         <div className="nav-pannel__menu">
           <LangButton />
-          <div className="menu__item">
-            <Link
-              to="/about"
-              onClick={() => dispatch(toggleNavPannel(!isNavPannelOpened))}
-            >
-              {isEnglish ? "about" : "обо мне"}
-            </Link>
-          </div>
+
           <div className="menu__item">
             <Link
               to="/projects"
@@ -41,14 +34,7 @@ function NavPannel({ isNavPannelOpened, isEnglish, dispatch }) {
               {isEnglish ? "projects" : "работы"}
             </Link>
           </div>
-          <div className="menu__item">
-            <Link
-              to="/pet-projects"
-              onClick={() => dispatch(toggleNavPannel(!isNavPannelOpened))}
-            >
-              {isEnglish ? "pet projects" : "учебные работы"}
-            </Link>
-          </div>
+
           <div className="menu__item">
             <Link
               to="/contacts"
@@ -65,7 +51,6 @@ function NavPannel({ isNavPannelOpened, isEnglish, dispatch }) {
               marsel.gabdulov@gmail.com
             </a>
           </div>
-
           <div className="nav-pannel__social-links">
             <div className="nav-pannel__social-icon">
               <a
