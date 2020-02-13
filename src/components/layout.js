@@ -3,12 +3,13 @@ import "./layout.scss"
 import Nav from "./Nav/Nav"
 import NavPannel from "./NavPannel/NavPannel"
 import Footer from "./Footer/Footer"
+import { connect } from "react-redux"
 
-const Layout = ({ children }) => {
+const Layout = ({ isEnglish, children }) => {
   return (
     <>
       <div className="turn">
-        <span>Пожалуйста переверните</span>
+        <span>{isEnglish ? "Please turn over" : "Пожалуйста переверните"}</span>
       </div>
       <Nav />
       <NavPannel />
@@ -20,6 +21,7 @@ const Layout = ({ children }) => {
   )
 }
 
-export default Layout
-
-// Icons made by <a href="https://www.flaticon.com/authors/vitaly-gorbachev" title="Vitaly Gorbachev">Vitaly Gorbachev</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+export default connect(
+  state => ({ isEnglish: state.app.isEnglish }),
+  null
+)(Layout)
