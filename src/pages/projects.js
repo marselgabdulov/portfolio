@@ -15,6 +15,7 @@ function ProjectsPage({ isEnglish, ...props }) {
           image={props.data.toronto.childImageSharp.fluid.src}
           link="https://toronto-crime-cd3b1.firebaseapp.com/"
           name="Toronto crime activity 2018"
+          githubLink="https://github.com/marselgabdulov/Toronto-Crime-2018"
           description={
             isEnglish
               ? "App showing Toronto crime activity in 2018"
