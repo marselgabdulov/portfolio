@@ -33,7 +33,6 @@ function Nav({ isNavPannelOpened, isEnglish, dispatch }) {
           >
             {isEnglish ? "contacts" : "контакты"}
           </Link>
-          <LangButton />
         </div>
         <div
           className="nav__menu-button"
@@ -41,6 +40,7 @@ function Nav({ isNavPannelOpened, isEnglish, dispatch }) {
         >
           <BurgerMenu />
         </div>
+        <LangButton />
       </div>
     </nav>
   )

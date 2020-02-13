@@ -54,22 +54,11 @@ function NavPannel({ isNavPannelOpened, isEnglish, dispatch }) {
           <div className="nav-pannel__social-links">
             <div className="nav-pannel__social-icon">
               <a
-                href="https://www.facebook.com/marsel.gabdulov"
-                title="facebook"
+                href="https://github.com/marselgabdulov"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Fb
-              </a>
-            </div>
-            <div className="nav-pannel__social-icon">
-              <a
-                href="https://www.instagram.com/marsel_gabdulov/"
-                title="instagram"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Inst
+                Github
               </a>
             </div>
           </div>

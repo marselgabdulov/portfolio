@@ -1,13 +1,57 @@
 .lang-button {
     outline: none;
     background: transparent;
+    position: absolute;
     border: none;
-    padding: 0;
-    margin: 0;
     font-weight: bold;
     width: auto;
 
     &:hover {
         cursor: pointer;
+    }
+}
+
+@media (max-width: 599px) and (orientation: portrait) {
+    .lang-button {
+        top: 1.125em;
+        right: 55px;
+        font-size: 1.1em;
+    }
+}
+
+
+// tublet-portrait
+@media (min-width: 600px) and (orientation: portrait) {
+    .lang-button {
+        top: 1.4em;
+        right: 80px;
+        font-size: 1.1em;
+    }
+
+}
+
+// tablet-landscape
+@media (min-width: 900px) and (orientation: landscape) {
+    .lang-button {
+        top: 1.75em;
+        right: 10%;
+        font-size: 1.1em;
+    }
+}
+
+// desktop/laptop
+@media (min-width: 1200px) {
+    .lang-button {
+        top: 2.25em;
+        right: 10%;
+        font-size: 1.1em;
+    }
+}
+
+@media (min-width: 1800px) {
+    .lang-button {
+        top: 2.25em;
+        right: 20%;
+        font-size: 1.1em;
     }
 }

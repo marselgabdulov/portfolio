@@ -17,7 +17,7 @@
 // mobile-portrait
 @media (max-width: 599px) and (orientation: portrait) {
     .footer {
-        height: 100px;
+        height: auto;
     }
 
     .footer__wrapper {
@@ -27,14 +27,13 @@
     }
 
     .footer__social {
-        width: 100%;
-        justify-content: center;
+        display: none;
     }
 
     .footer__copy {
         margin-top: 1em;
         margin-bottom: 1em;
-        align-self: center;
+        align-self: left;
     }
 }
 
