@@ -1,11 +1,32 @@
 module.exports = {
   siteMetadata: {
-    pathPrefix: "/portfolio",
+    siteUrl: "https://marsdev.ru/",
     title: `marsdev.ru`,
-    description: `Марсель Габдулов. Фронтенд разработчик. Cпециализируюсь на React, интересуюсь дизайном`,
+    description: `Марсель Габдулов. Фронтенд разработчик. Cпециализируюсь на React.`,
     author: `marsel.gabdulov@gmail.com`,
   },
   plugins: [
+    {
+      resolve: "gatsby-plugin-robots-txt",
+      options: {
+        host: "https://marsdev.ru/",
+        sitemap: "https://marsdev.ru/sitemap.xml",
+        policy: [{ userAgent: "*", allow: "/" }],
+      },
+    },
+    `gatsby-plugin-sitemap`,
+    {
+      resolve: `gatsby-plugin-yandex-metrica`,
+      options: {
+        trackingId: "57508138",
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+        trackHash: true,
+        // Detailed recordings of user activity on the site: mouse movement, scrolling, and clicks.
+        webvisor: false,
+      },
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -25,7 +46,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#ffffff`,
         display: `minimal-ui`,
-        icon: `src/images/android-chrome-512x512.png`, // This path is relative to the root of the site.
+        icon: `src/images/android-chrome-512x512.png`,
       },
     },
     // added
