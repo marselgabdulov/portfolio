@@ -12,11 +12,9 @@
 // mobile-portrait
 @media (max-width: 599px) and (orientation: portrait) {
   .contacts-page {
-    height: 75vh;
+    margin-top: 10%;
 
-    h2 {
-      margin-top: 10%;
-    }
+    height: 65vh;
   }
 }
 
