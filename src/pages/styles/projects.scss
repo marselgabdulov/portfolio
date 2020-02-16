@@ -2,13 +2,14 @@
 @media (max-width: 599px) and (orientation: portrait) {
     .projects {
         margin-bottom: 3em;
+        margin-top: 70px;
     }
 }
 
 // tublet-portrait
 @media (min-width: 600px) and (orientation: portrait) {
     .projects {
-        margin-top: 3em;
+        margin-top: 80px;
         margin-bottom: 4em;
     }
 }
@@ -16,7 +17,7 @@
 // tablet-landscape
 @media (min-width: 900px) and (orientation: landscape) {
     .projects {
-        margin-top: 3em;
+        margin-top: 80px;
         margin-bottom: 4em;
     }
 }
@@ -24,7 +25,7 @@
 // desktop/laptop
 @media (min-width: 1200px) {
     .projects {
-        margin-top: 2em;
+        margin-top: 120px;
         margin-bottom: 4em;
     }
 }
@@ -32,7 +33,7 @@
 // desktop x-large
 @media (min-width: 1800px) {
     .projects {
-        margin-top: 2em;
+        margin-top: 120px;
         margin-bottom: 5em;
     }
 }

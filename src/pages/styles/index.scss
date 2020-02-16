@@ -22,7 +22,7 @@
 // mobile-portrait
 @media (max-width: 599px) and (orientation: portrait) {
     .intro {
-        margin-top: 10%;
+        margin-top: 30%;
         height: 65vh;
     }
 
@@ -40,8 +40,8 @@
 // tublet-portrait
 @media (min-width: 600px) and (orientation: portrait) {
     .intro {
-        margin-top: 10%;
-        height: calc(100vh - 220px);
+        margin-top: 20%;
+        height: calc(100vh - 230px);
     }
 
     h1 {
@@ -58,8 +58,8 @@
 // tablet-landscape
 @media (min-width: 900px) and (orientation: landscape) {
     .intro {
-        margin-top: 10%;
-        height: calc(100vh - 250px);
+        margin-top: 20%;
+        height: calc(100vh - 300px);
     }
 
     h1 {
@@ -76,7 +76,7 @@
 @media (min-width: 1200px) {
     .intro {
         margin-top: 10%;
-        height: calc(100vh - 350px);
+        height: calc(100vh - 230px);
     }
 
     h1 {
@@ -96,7 +96,7 @@
 // desktop x-large
 @media (min-width: 1800px) {
     .intro {
-        margin-top: 10%;
+        margin-top: 15%;
         height: calc(100vh - 350px);
     }
 
