@@ -12,18 +12,6 @@ function ProjectsPage({ isEnglish, ...props }) {
       <SEO title={isEnglish ? "Projects" : "Работы"} />
       <section className="projects">
         <ProjectCard
-          image={props.data.toronto.childImageSharp.fluid.src}
-          link="https://toronto-crime-cd3b1.firebaseapp.com/"
-          name="Toronto crime activity 2018"
-          githubLink="https://github.com/marselgabdulov/Toronto-Crime-2018"
-          description={
-            isEnglish
-              ? "App showing Toronto crime activity in 2018"
-              : "Приложение, показывающее криминальную активность в Торонто в 2018 году"
-          }
-          tools="React, Deckgl"
-        />
-        <ProjectCard
           reverse={true}
           image={props.data.reklama.childImageSharp.fluid.src}
           link="https://reklama-da.ru/"
@@ -59,6 +47,30 @@ function ProjectsPage({ isEnglish, ...props }) {
           tools="React(Gatsby)"
         />
         <ProjectCard
+          image={props.data.matrix.childImageSharp.fluid.src}
+          link="https://eisenhower-matrix-d5ff0.firebaseapp.com/"
+          name="Eisehower matrix"
+          githubLink="https://github.com/marselgabdulov/eisenhower-matrix"
+          description={
+            isEnglish
+              ? "Eisenhower matrix ToDo application"
+              : "ToDo приложение, основанное на матрице Эйзенхауэра"
+          }
+          tools="React, Deckgl"
+        />
+        <ProjectCard
+          image={props.data.toronto.childImageSharp.fluid.src}
+          link="https://toronto-crime-cd3b1.firebaseapp.com/"
+          name="Toronto crime activity 2018"
+          githubLink="https://github.com/marselgabdulov/Toronto-Crime-2018"
+          description={
+            isEnglish
+              ? "App showing Toronto crime activity in 2018"
+              : "Приложение, показывающее криминальную активность в Торонто в 2018 году"
+          }
+          tools="React, Deckgl"
+        />
+        <ProjectCard
           image={props.data.tesla.childImageSharp.fluid.src}
           name="spaceX launches"
           link="https://spacex-launches-3b0bf.firebaseapp.com/"
@@ -88,6 +100,9 @@ export const fluidImage = graphql`
 export const pageQuery = graphql`
   query {
     angel: file(relativePath: { eq: "projects/angel.jpg" }) {
+      ...fluidImage
+    }
+    matrix: file(relativePath: { eq: "projects/matrix.png" }) {
       ...fluidImage
     }
     toronto: file(relativePath: { eq: "projects/toronto.png" }) {
