@@ -1,0 +1,21 @@
+// mobile-portrait
+@media (max-width: 599px) and (orientation: portrait) {}
+
+// tublet-portrait
+@media (min-width: 600px) and (orientation: portrait) {}
+
+// tablet-landscape
+@media (min-width: 900px) and (orientation: landscape) {}
+
+// desktop/laptop
+@media (min-width: 1200px) {}
+
+// desktop x-large
+@media (min-width: 1800px) {
+    .blog-post-container {
+        margin-top: 150px;
+        width: 60%;
+        margin-left: 20%;
+        min-height: calc(100vh - 220px);
+    }
+}
