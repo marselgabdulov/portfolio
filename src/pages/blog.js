@@ -1,29 +1,71 @@
 import React from "react"
 import { graphql } from "gatsby"
-import PostLink from "../components/PostLink"
+import PostDescription from "../components/PostDescription/PostDescription"
 import Layout from "../components/layout"
+import "./styles/blog.scss"
+import { Link } from "gatsby"
 
 const BlogPage = ({
   data: {
-    allMarkdownRemark: { edges },
+    allMarkdownRemark: { edges, group },
+    angel,
   },
 }) => {
   const Posts = edges
     .filter(edge => !!edge.node.frontmatter.date) // You can filter your posts based on some criteria
-    .map(edge => <PostLink key={edge.node.id} post={edge.node} />)
+    .map(edge => (
+      <PostDescription
+        key={edge.node.id}
+        post={edge.node}
+        postDescriptionImage={angel}
+      />
+    ))
+
+  const Tags = group.map(tag => (
+    <span className="tag-link" key={tag.tag}>
+      [<Link to={`tags/${tag.tag}`}>{tag.tag}</Link>]
+    </span>
+  ))
 
   return (
     <Layout>
-      <div>{Posts}</div>
+      <div className="blog-wrapper">
+        <div className="blog__posts">{Posts}</div>
+        <div className="blog__sidebar">
+          <p>
+            Здесь обо всем, что мне интересно и в чем мне бы хотелось
+            разобраться.
+          </p>
+          ТЭГИ
+          <p>{Tags}</p>
+        </div>
+      </div>
     </Layout>
   )
 }
 
 export default BlogPage
 
+export const fluidImage = graphql`
+  fragment fluidImage on File {
+    childImageSharp {
+      fluid(maxWidth: 1200) {
+        ...GatsbyImageSharpFluid
+      }
+    }
+  }
+`
+
 export const pageQuery = graphql`
   query {
+    angel: file(relativePath: { eq: "projects/angel.jpg" }) {
+      ...fluidImage
+    }
     allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+      group(field: frontmatter___tags) {
+        tag: fieldValue
+        totalCount
+      }
       edges {
         node {
           id

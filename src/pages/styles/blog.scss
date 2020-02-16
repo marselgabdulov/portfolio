@@ -1,0 +1,128 @@
+.blog-wrapper {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    .blog__posts {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    .blog__sidebar {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+    }
+}
+
+// mobile-portrait
+@media (max-width: 599px) and (orientation: portrait) {
+    .blog-wrapper {
+        margin-top: 100px;
+        width: 90%;
+        margin-left: 5%;
+        height: auto;
+
+        .blog__posts {
+            width: 100%;
+        }
+
+        .blog__sidebar {
+            display: none;
+        }
+    }
+}
+
+// tublet-portrait
+@media (min-width: 600px) and (orientation: portrait) {
+    .blog-wrapper {
+        margin-top: 100px;
+        width: 90%;
+        margin-left: 5%;
+        height: auto;
+
+        .blog__posts {
+            width: 100%;
+        }
+
+        .blog__sidebar {
+            display: none;
+        }
+    }
+}
+
+// tablet-landscape
+@media (min-width: 900px) and (orientation: landscape) {
+    .blog-wrapper {
+        margin-top: 150px;
+        width: 80%;
+        margin-left: 10%;
+        height: auto;
+
+        .blog__posts {
+            width: 70%;
+        }
+
+        .blog__sidebar {
+            top: 150px;
+            right: 14.5%;
+            width: 250px;
+
+            p {
+                margin-top: 0;
+                font-size: 1em;
+            }
+        }
+    }
+}
+
+// desktop/laptop
+@media (min-width: 1200px) {
+    .blog-wrapper {
+        margin-top: 150px;
+        width: 80%;
+        margin-left: 10%;
+        height: auto;
+
+        .blog__posts {
+            width: 70%;
+        }
+
+        .blog__sidebar {
+            top: 150px;
+            right: 14.5%;
+            width: 250px;
+
+            p {
+                margin-top: 0;
+                font-size: 1em;
+            }
+        }
+    }
+}
+
+// desktop x-large
+@media (min-width: 1800px) {
+    .blog-wrapper {
+        margin-top: 150px;
+        width: 60%;
+        margin-left: 20%;
+        height: auto;
+
+        .blog__posts {
+            width: 70%;
+        }
+
+        .blog__sidebar {
+            top: 150px;
+            right: 23%;
+            width: 250px;
+
+            p {
+                margin-top: 0;
+                font-size: 1em;
+            }
+        }
+    }
+}
