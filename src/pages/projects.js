@@ -56,9 +56,10 @@ function ProjectsPage({ isEnglish, ...props }) {
               ? "Eisenhower matrix ToDo application"
               : "ToDo приложение, основанное на матрице Эйзенхауэра"
           }
-          tools="React, Deckgl"
+          tools="React, localStorage"
         />
         <ProjectCard
+          reverse={true}
           image={props.data.toronto.childImageSharp.fluid.src}
           link="https://toronto-crime-cd3b1.firebaseapp.com/"
           name="Toronto crime activity 2018"
