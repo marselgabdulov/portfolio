@@ -19,9 +19,7 @@ function NavPannel({ isNavPannelOpened, isEnglish, dispatch }) {
           </div>
         </button>
         <div className="nav-pannel__logo">
-          <Link to="/" title="вернуться на главную">
-            {isEnglish ? "MG" : "МГ"}
-          </Link>
+          <Link to="/">{isEnglish ? "MG" : "МГ"}</Link>
         </div>
         <div className="nav-pannel__menu">
           <LangButton />
@@ -32,6 +30,15 @@ function NavPannel({ isNavPannelOpened, isEnglish, dispatch }) {
               onClick={() => dispatch(toggleNavPannel(!isNavPannelOpened))}
             >
               {isEnglish ? "projects" : "работы"}
+            </Link>
+          </div>
+
+          <div className="menu__item">
+            <Link
+              to="/blog"
+              onClick={() => dispatch(toggleNavPannel(!isNavPannelOpened))}
+            >
+              {isEnglish ? "blog" : "блог"}
             </Link>
           </div>
 

@@ -33,6 +33,13 @@ function Nav({ isNavPannelOpened, isEnglish, dispatch }) {
           >
             {isEnglish ? "contacts" : "контакты"}
           </Link>
+          <Link
+            className="link"
+            to="/blog"
+            activeStyle={{ fontWeight: "bold" }}
+          >
+            {isEnglish ? "blog" : "блог"}
+          </Link>
         </div>
         <div
           className="nav__menu-button"

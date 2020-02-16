@@ -1,5 +1,9 @@
 .nav {
     width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
 }
 
 .nav__wrapper {
@@ -87,7 +91,7 @@ a {
     }
 
     .nav__links {
-        width: 170px;
+        width: 240px;
         margin-right: 4em;
     }
 
@@ -99,7 +103,7 @@ a {
 // desktop/laptop
 @media (min-width: 1200px) {
     .nav {
-        height: 100px;
+        height: 80px;
     }
 
     .nav__wrapper {
@@ -112,7 +116,7 @@ a {
     }
 
     .nav__links {
-        width: 180px;
+        width: 240px;
     }
 
     .nav__menu-button {
@@ -123,7 +127,7 @@ a {
 // desktop x-large
 @media (min-width: 1800px) {
     .nav {
-        height: 100px;
+        height: 80px;
     }
 
     .nav__wrapper {
@@ -136,7 +140,7 @@ a {
     }
 
     .nav__links {
-        width: 180px;
+        width: 240px;
     }
 
     .nav__menu-button {
