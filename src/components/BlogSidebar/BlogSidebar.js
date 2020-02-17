@@ -10,7 +10,7 @@ function BlogSidebar() {
       </p>
       <p>Рубрики: </p>
       <p>
-        <Link to="/books">[Книги]</Link>
+        <Link to="/books">[books]</Link>
       </p>
     </div>
   )

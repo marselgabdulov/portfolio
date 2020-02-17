@@ -4,6 +4,7 @@ import Layout from "../components/layout"
 import SharePost from "../components/SharePost/SharePost"
 import "./blogTemplate.scss"
 import Img from "gatsby-image"
+import { Link } from "gatsby"
 
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
@@ -28,8 +29,11 @@ export default function Template({
               {frontmatter.imageAuthor}
             </a>
           </p>
-
-          <p>{frontmatter.tags}</p>
+          <p>
+            {frontmatter.tags.map(tag => (
+              <Link to={`https://marsdev.ru/${tag}`}>[{tag}]</Link>
+            ))}
+          </p>
           <div
             className="blog-post-content"
             dangerouslySetInnerHTML={{ __html: html }}
