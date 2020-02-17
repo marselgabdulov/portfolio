@@ -3,24 +3,21 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SharePost from "../components/SharePost/SharePost"
 import "./blogTemplate.scss"
+import Img from "gatsby-image"
 
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
 }) {
   const { markdownRemark } = data // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark
+  let featuredImgFluid = frontmatter.featuredImage.childImageSharp.fluid
 
   return (
     <Layout>
       <div className="blog-post-container">
         <div className="blog-post">
           <h1>{frontmatter.title}</h1>
-          {frontmatter.imageSrc && (
-            <div
-              className="blog-post__image"
-              style={{ backgroundImage: `url(${frontmatter.imageSrc})` }}
-            ></div>
-          )}
+          <Img fluid={featuredImgFluid} className="blog-post__image" />
           <p className="blog-post__image-author">
             Фото{" "}
             <a
@@ -54,7 +51,13 @@ export const pageQuery = graphql`
         path
         title
         tags
-        imageSrc
+        featuredImage {
+          childImageSharp {
+            fluid(maxWidth: 800) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
         imageAuthor
         imageAuthorLink
       }

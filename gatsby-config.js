@@ -79,6 +79,9 @@ module.exports = {
     {
       resolve: `gatsby-transformer-remark`,
       options: {
+        tableOfContents: {
+          imageSrc: null,
+        },
         // CommonMark mode (default: true)
         commonmark: true,
         // Footnotes mode (default: true)

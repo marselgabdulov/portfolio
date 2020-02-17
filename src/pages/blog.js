@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect } from "react"
 import { graphql } from "gatsby"
 import PostDescription from "../components/PostDescription/PostDescription"
 import Layout from "../components/layout"
@@ -8,7 +8,6 @@ import { Link } from "gatsby"
 const BlogPage = ({
   data: {
     allMarkdownRemark: { edges, group },
-    angel,
   },
 }) => {
   const Posts = edges
@@ -17,10 +16,13 @@ const BlogPage = ({
       <PostDescription
         key={edge.node.id}
         post={edge.node}
-        postDescriptionImage={angel}
+        postDescriptionImage={edge.node.frontmatter.childImageSharp}
+        // postDescriptionImage={defaultImage}
       />
     ))
-
+  useEffect(() => {
+    console.log(edges[0].node.frontmatter.imageSrc)
+  }, [])
   const Tags = group.map(tag => (
     <span className="tag-link" key={tag.tag}>
       [<Link to={`tags/${tag.tag}`}>{tag.tag}</Link>]
@@ -46,21 +48,8 @@ const BlogPage = ({
 
 export default BlogPage
 
-export const fluidImage = graphql`
-  fragment fluidImage on File {
-    childImageSharp {
-      fluid(maxWidth: 1200) {
-        ...GatsbyImageSharpFluid
-      }
-    }
-  }
-`
-
 export const pageQuery = graphql`
   query {
-    angel: file(relativePath: { eq: "projects/angel.jpg" }) {
-      ...fluidImage
-    }
     allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
       group(field: frontmatter___tags) {
         tag: fieldValue
@@ -74,6 +63,13 @@ export const pageQuery = graphql`
             date(formatString: "DD.MM.YYYY")
             path
             title
+            featuredImage {
+              childImageSharp {
+                fluid(maxWidth: 800) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
           }
         }
       }

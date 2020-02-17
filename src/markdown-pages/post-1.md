@@ -3,7 +3,7 @@ path: "/blog/first-post"
 date: "2019-05-04"
 title: "My first blog post"
 tags: ["animals", "Chicago", "zoos"]
-imageSrc: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
+featuredImage: ../images/blog-posts/territory.jpg
 imageAuthor: "Kalen Emsley"
 imageAuthorLink: "https://unsplash.com/@kalenemsley"
 ---
