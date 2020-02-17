@@ -11,7 +11,7 @@ const BlogPage = ({
   },
 }) => {
   const Posts = edges
-    .filter(edge => !!edge.node.frontmatter.date) // You can filter your posts based on some criteria
+    .filter(edge => edge.node.frontmatter.tags.includes("books"))
     .map(edge => (
       <PostDescription
         key={edge.node.id}
@@ -23,7 +23,7 @@ const BlogPage = ({
     <Layout>
       <div className="blog-wrapper">
         <div className="blog__posts">
-          <h1>Все статьи</h1>
+          <h1>О книгах</h1>
           {Posts}
         </div>
         <BlogSidebar />
@@ -45,6 +45,7 @@ export const pageQuery = graphql`
             date(formatString: "DD.MM.YYYY")
             path
             title
+            tags
             featuredImage {
               childImageSharp {
                 fluid(maxWidth: 1200) {

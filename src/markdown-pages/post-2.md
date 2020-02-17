@@ -1,8 +1,8 @@
 ---
-path: "/blog/first-post"
+path: "/blog/second-post"
 date: "2019-05-04"
-title: "My first blog post"
-tags: ["books"]
+title: "My second blog post"
+tags: ["web", "http"]
 featuredImage: ../images/blog-posts/territory.jpg
 imageAuthor: "Kalen Emsley"
 imageAuthorLink: "https://unsplash.com/@kalenemsley"
