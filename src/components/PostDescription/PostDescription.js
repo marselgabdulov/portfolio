@@ -9,15 +9,14 @@ function Postdescription({ post, postDescriptionImage }) {
   return (
     <div className="post-description">
       <Link to={post.frontmatter.path}>
-        <h3 className="post__title">{post.frontmatter.title}</h3>
+        <div
+          className="post__image"
+          style={{
+            backgroundImage: `url(${postDescriptionImage.childImageSharp.fluid.src})`,
+          }}
+        ></div>
       </Link>
-
-      <div
-        className="post__image"
-        style={{
-          backgroundImage: `url(${postDescriptionImage.childImageSharp.fluid.src})`,
-        }}
-      ></div>
+      <h3 className="post__title">{post.frontmatter.title}</h3>
       <p className="post__date">{post.frontmatter.date}</p>
     </div>
   )

@@ -36,6 +36,7 @@
 
 // mobile-portrait
 @media (max-width: 599px) and (orientation: portrait) {
+
   .project-card,
   .project-card.reverse {
     flex-direction: column-reverse;
@@ -63,6 +64,7 @@
 
 // tublet-portrait
 @media (min-width: 600px) and (orientation: portrait) {
+
   .project-card,
   .project-card.reverse {
     flex-direction: column-reverse;
@@ -78,6 +80,7 @@
     width: 100%;
     height: auto;
     text-align: center;
+    align-items: center;
     justify-content: flex-start;
     margin-top: 1em;
   }

@@ -97,6 +97,11 @@ body {
   section {
     width: 90%;
     margin-left: 5%;
+
+    p {
+      font-size: 1em;
+      line-height: 1.5em;
+    }
   }
 }
 
@@ -108,7 +113,7 @@ body {
   }
 
   p {
-    font-size: 1.25em;
+    font-size: 1em;
     line-height: 1.1em;
   }
 }
@@ -121,8 +126,8 @@ body {
   }
 
   p {
-    font-size: 1.25em;
-    line-height: 1.1em;
+    font-size: 1em;
+    line-height: 1.25em;
   }
 }
 
@@ -134,7 +139,7 @@ body {
   }
 
   p {
-    font-size: 1.25em;
+    font-size: 1em;
     line-height: 1.5em;
   }
 }
@@ -147,6 +152,6 @@ body {
   }
 
   p {
-    font-size: 1.25em;
+    font-size: 1em;
   }
 }
