@@ -4,6 +4,7 @@ import PostDescription from "../components/PostDescription/PostDescription"
 import Layout from "../components/layout"
 import BlogSidebar from "../components/BlogSidebar/BlogSidebar"
 import "./styles/blog.scss"
+import SEO from "../components/seo"
 
 const BlogPage = ({
   data: {
@@ -21,6 +22,7 @@ const BlogPage = ({
     ))
   return (
     <Layout>
+      <SEO title="Блог" />
       <div className="blog-wrapper">
         <div className="blog__posts">
           <h1>Все статьи</h1>
