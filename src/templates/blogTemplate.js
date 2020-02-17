@@ -1,6 +1,7 @@
 import React, { useEffect } from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
+import SharePost from "../components/SharePost/SharePost"
 import "./blogTemplate.scss"
 
 export default function Template({
@@ -40,6 +41,7 @@ export default function Template({
           />
         </div>
         <h4>{frontmatter.date}</h4>
+        <SharePost postLink={frontmatter.path} />
       </div>
     </Layout>
   )
@@ -50,7 +52,7 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
       frontmatter {
-        date(formatString: "MMMM DD, YYYY")
+        date(formatString: "DD.MM.YYYY")
         path
         title
         tags
