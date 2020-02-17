@@ -90,6 +90,10 @@
     margin-left: 20%;
     min-height: calc(100vh - 220px);
 
+    p {
+      font-size: 1.2em;
+    }
+
     .blog-post {
       .blog-post__image {
         height: 300px;
