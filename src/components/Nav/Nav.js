@@ -37,6 +37,7 @@ function Nav({ isNavPannelOpened, isEnglish, dispatch }) {
             className="link"
             to="/blog"
             activeStyle={{ fontWeight: "bold" }}
+            title={isEnglish ? "in Russian" : "На русском"}
           >
             {isEnglish ? "blog" : "блог"}
           </Link>
