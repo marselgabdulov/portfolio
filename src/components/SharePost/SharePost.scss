@@ -10,24 +10,24 @@
 // mobile-portrait
 @media (max-width: 599px) and (orientation: portrait) {
   .share-post {
-    width: 200px;
+    width: 70%;
     margin-bottom: 2em;
   }
 
   svg {
-    width: 1.25em;
-    height: 1.25em;
+    width: 1.75em;
+    height: 1.75em;
   }
 }
 
 // tublet-portrait
 @media (min-width: 600px) and (orientation: portrait) {
   .share-post {
-    width: 240px;
+    width: 50%;
 
     svg {
-      width: 1.25em;
-      height: 1.25em;
+      width: 1.75em;
+      height: 1.75em;
     }
   }
 }
@@ -50,8 +50,8 @@
     width: 240px;
 
     svg {
-      width: 1.25em;
-      height: 1.25em;
+      width: 1.75em;
+      height: 1.75em;
     }
   }
 }

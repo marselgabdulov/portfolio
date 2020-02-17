@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React from "react"
 import "./SharePost.scss"
 import Telegram from "../../assets/telegram.svg"
 import Twitter from "../../assets/twitter.svg"
@@ -15,9 +15,6 @@ import {
 } from "react-share"
 
 function SharePost({ postLink }) {
-  useEffect(() => {
-    console.log(postLink)
-  }, [])
   return (
     <div className="share-post">
       <FacebookShareButton url={`https://marsdev.ru/${postLink}`}>

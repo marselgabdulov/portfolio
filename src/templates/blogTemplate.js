@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SharePost from "../components/SharePost/SharePost"
@@ -9,9 +9,7 @@ export default function Template({
 }) {
   const { markdownRemark } = data // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark
-  useEffect(() => {
-    console.log(data)
-  }, [])
+
   return (
     <Layout>
       <div className="blog-post-container">
