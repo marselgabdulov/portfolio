@@ -16,7 +16,9 @@ function Postdescription({ post, postDescriptionImage }) {
           }}
         ></div>
       </Link>
-      <h3 className="post__title">{post.frontmatter.title}</h3>
+      <h3 className="post__title">
+        <Link to={post.frontmatter.path}>{post.frontmatter.title}</Link>
+      </h3>
       <p className="post__date">{post.frontmatter.date}</p>
     </div>
   )
