@@ -7,7 +7,7 @@ import { Link } from "gatsby"
 
 const BlogPage = ({
   data: {
-    allMarkdownRemark: { edges, group },
+    allMarkdownRemark: { edges },
   },
 }) => {
   const Posts = edges
@@ -17,17 +17,11 @@ const BlogPage = ({
         key={edge.node.id}
         post={edge.node}
         postDescriptionImage={edge.node.frontmatter.childImageSharp}
-        // postDescriptionImage={defaultImage}
       />
     ))
   useEffect(() => {
     console.log(edges[0].node.frontmatter.imageSrc)
   }, [])
-  const Tags = group.map(tag => (
-    <span className="tag-link" key={tag.tag}>
-      [<Link to={`tags/${tag.tag}`}>{tag.tag}</Link>]
-    </span>
-  ))
 
   return (
     <Layout>
@@ -38,8 +32,6 @@ const BlogPage = ({
             Здесь обо всем, что мне интересно и в чем мне бы хотелось
             разобраться.
           </p>
-          ТЭГИ
-          <p>{Tags}</p>
         </div>
       </div>
     </Layout>
@@ -51,10 +43,6 @@ export default BlogPage
 export const pageQuery = graphql`
   query {
     allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
-      group(field: frontmatter___tags) {
-        tag: fieldValue
-        totalCount
-      }
       edges {
         node {
           id
