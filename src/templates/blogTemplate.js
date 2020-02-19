@@ -31,7 +31,9 @@ export default function Template({
           </p>
           <p>
             {frontmatter.tags.map(tag => (
-              <Link to={`https://marsdev.ru/${tag}`}>[{tag}]</Link>
+              <Link key={tag} to={`https://marsdev.ru/${tag}`}>
+                [{tag}]
+              </Link>
             ))}
           </p>
           <h2>{frontmatter.subTitle}</h2>

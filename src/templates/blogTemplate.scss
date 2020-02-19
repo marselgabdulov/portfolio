@@ -1,4 +1,9 @@
 .blog-post-container {
+  p,
+  li {
+    font-family: "IBM Plex Serif", serif;
+  }
+
   a {
     color: blue;
     text-decoration: underline;
@@ -20,11 +25,35 @@
     margin-left: 5%;
     min-height: calc(100vh - 220px);
 
+    p,
+    li {
+      font-size: 1.1em;
+      line-height: 1.55em;
+    }
+
     .blog-post {
       .blog-post__image {
-        height: 300px;
+        height: 40vh;
+      }
+
+      h1 {
+        font-size: 1.8em;
+        line-height: 1.25em;
+      }
+
+      h2 {
+        font-size: 1.75em;
+      }
+
+      h3 {
+        font-size: 1.5em;
+      }
+
+      h4 {
+        font-size: 1.25em;
       }
     }
+    margin-bottom: 5em;
   }
 }
 
@@ -36,12 +65,34 @@
     margin-left: 5%;
     min-height: calc(100vh - 220px);
 
-    .blog-post {
-      .blog-post__image {
-        height: 300px;
-      }
+    p,
+    li {
+      font-size: 1.2em;
+      line-height: 1.6em;
     }
 
+    .blog-post {
+      .blog-post__image {
+        height: 400px;
+      }
+
+      h1 {
+        font-size: 2.5em;
+        line-height: 1.25em;
+      }
+
+      h2 {
+        font-size: 2em;
+      }
+
+      h3 {
+        font-size: 1.5em;
+      }
+
+      h4 {
+        font-size: 1.25em;
+      }
+    }
     margin-bottom: 5em;
   }
 }
@@ -54,12 +105,34 @@
     margin-left: 10%;
     min-height: calc(100vh - 220px);
 
-    .blog-post {
-      .blog-post__image {
-        height: 300px;
-      }
+    p,
+    li {
+      font-size: 1.1em;
+      line-height: 1.55em;
     }
 
+    .blog-post {
+      .blog-post__image {
+        height: 400px;
+      }
+
+      h1 {
+        font-size: 2.5em;
+        line-height: 1.25em;
+      }
+
+      h2 {
+        font-size: 2em;
+      }
+
+      h3 {
+        font-size: 1.5em;
+      }
+
+      h4 {
+        font-size: 1.25em;
+      }
+    }
     margin-bottom: 5em;
   }
 }
@@ -72,13 +145,34 @@
     margin-left: 10%;
     min-height: calc(100vh - 220px);
 
+    p,
+    li {
+      font-size: 1.2em;
+      line-height: 1.6em;
+    }
+
     .blog-post {
       .blog-post__image {
-        height: 300px;
+        height: 400px;
       }
 
-      margin-bottom: 5em;
+      h1 {
+        font-size: 3em;
+      }
+
+      h2 {
+        font-size: 2em;
+      }
+
+      h3 {
+        font-size: 1.5em;
+      }
+
+      h4 {
+        font-size: 1.25em;
+      }
     }
+    margin-bottom: 5em;
   }
 }
 
@@ -93,7 +187,7 @@
     p,
     li {
       font-size: 1.2em;
-      line-height: 1.5em;
+      line-height: 1.6em;
     }
 
     .blog-post {
@@ -102,7 +196,7 @@
       }
 
       h1 {
-        font-size: 3.25em;
+        font-size: 3em;
       }
 
       h2 {
@@ -113,7 +207,10 @@
         font-size: 1.5em;
       }
 
-      margin-bottom: 5em;
+      h4 {
+        font-size: 1.25em;
+      }
     }
+    margin-bottom: 5em;
   }
 }
