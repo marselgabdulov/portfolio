@@ -34,6 +34,7 @@ export default function Template({
               <Link to={`https://marsdev.ru/${tag}`}>[{tag}]</Link>
             ))}
           </p>
+          <h2>{frontmatter.subTitle}</h2>
           <div
             className="blog-post-content"
             dangerouslySetInnerHTML={{ __html: html }}
@@ -54,6 +55,7 @@ export const pageQuery = graphql`
         date(formatString: "DD.MM.YYYY")
         path
         title
+        subTitle
         tags
         featuredImage {
           childImageSharp {

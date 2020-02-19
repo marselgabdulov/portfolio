@@ -10,9 +10,12 @@ function Postdescription({ post }) {
       <Link to={post.frontmatter.path}>
         <Img fluid={featuredImgFluid} className="post__image" />
       </Link>
-      <h3 className="post__title">
-        <Link to={post.frontmatter.path}>{post.frontmatter.title}</Link>
-      </h3>
+      <div className="post__title">
+        <h3>
+          <Link to={post.frontmatter.path}>{post.frontmatter.title}</Link>
+        </h3>
+        <h4>{post.frontmatter.subTitle}</h4>
+      </div>
       <p className="post__date">{post.frontmatter.date}</p>
     </div>
   )

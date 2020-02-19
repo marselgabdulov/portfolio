@@ -13,7 +13,7 @@
 
   .post__title {
     position: absolute;
-
+    left: 5%;
     height: auto;
     line-height: 1.5em;
   }
@@ -53,8 +53,17 @@
 
     .post__title {
       top: 5%;
-      left: 5%;
-      font-size: 1.25em;
+      width: 90%;
+
+
+      h3 {
+        font-size: 1.25em;
+        line-height: 1.5em;
+      }
+
+      h4 {
+        font-size: 1em;
+      }
     }
   }
 }
@@ -77,10 +86,18 @@
     }
 
     .post__title {
-      width: 70%;
       top: 10%;
-      left: 5%;
-      font-size: 2em;
+      width: 70%;
+
+
+      h3 {
+        font-size: 1.75em;
+        line-height: 1.75em;
+      }
+
+      h4 {
+        font-size: 1.25em;
+      }
     }
   }
 }
@@ -104,9 +121,16 @@
 
     .post__title {
       top: 10%;
-      left: 5%;
-      font-size: 1.5em;
-      width: 60%;
+      width: 70%;
+
+      h3 {
+        font-size: 1.5em;
+        line-height: 1.25em;
+      }
+
+      h4 {
+        font-size: 1em;
+      }
     }
   }
 }
@@ -130,8 +154,14 @@
 
     .post__title {
       top: 10%;
-      left: 5%;
-      font-size: 1.75em;
+
+      h3 {
+        font-size: 1.75em;
+      }
+
+      h4 {
+        font-size: 1.25em;
+      }
     }
   }
 }
@@ -149,14 +179,19 @@
 
     .post__date {
       top: 85%;
-      left: 5%;
       font-size: 0.9em;
     }
 
     .post__title {
       top: 10%;
-      left: 5%;
-      font-size: 2em;
+
+      h3 {
+        font-size: 1.75em;
+      }
+
+      h4 {
+        font-size: 1.25em;
+      }
     }
   }
 }
