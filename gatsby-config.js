@@ -56,7 +56,9 @@ module.exports = {
       options: {
         fonts: [
           `IBM Plex Mono`,
-          `source monospace\:400,600, 400i`, // you can also specify font weights and styles
+          `source monospace\:400,600`, // you can also specify font weights and styles
+          `IBM Plex Serif`,
+          `source monospace\:400,400i`, // you can also specify font weights and styles
         ],
         display: "swap",
       },
