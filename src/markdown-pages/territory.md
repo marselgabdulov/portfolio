@@ -2,6 +2,7 @@
 path: "/blog/territory"
 date: "2020-02-17"
 title: "Территория. Олег Куваев."
+subTitle: "После прочтения"
 tags: ["books"]
 featuredImage: ../images/blog-posts/territory.jpg
 imageAuthor: "Kalen Emsley"
