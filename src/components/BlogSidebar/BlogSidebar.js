@@ -9,8 +9,10 @@ function BlogSidebar() {
         Здесь обо всем, что мне интересно и в чем мне бы хотелось разобраться.
       </p>
       <p>Рубрики: </p>
-      <p>
+      <p className="blog-sidebar__tags">
         <Link to="/books">[books]</Link>
+        <Link to="/soft-skills">[soft skills]</Link>
+        <Link to="/translate">[translate]</Link>
       </p>
     </div>
   )
