@@ -7,6 +7,10 @@ tags: ["books"]
 featuredImage: ../images/blog-posts/territory.jpg
 imageAuthor: "Kalen Emsley"
 imageAuthorLink: "https://unsplash.com/@kalenemsley"
+prevPostName: ""
+nextPostName: ""
+prevPostLink: ""
+nextPostLink: ""
 ---
 
 Территорию позиционируют как романтическую книгу о севере и геологах. Романтика в книге конечно же присутсвует. Но я бы рассмотрел другие темы, раскрытые автором.

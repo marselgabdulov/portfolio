@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect } from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SharePost from "../components/SharePost/SharePost"
@@ -13,14 +13,17 @@ export default function Template({
   const { frontmatter, html } = markdownRemark
   let featuredImgFluid = frontmatter.featuredImage.childImageSharp.fluid
 
+  useEffect(() => {
+    console.log(frontmatter.prevPostName)
+  }, [])
   return (
     <Layout>
       <div className="blog-post-container">
         <div className="blog-post">
-          <h1>{frontmatter.title}</h1>
           <Img fluid={featuredImgFluid} className="blog-post__image" />
+          <h1>{frontmatter.title}</h1>
           <p className="blog-post__image-author">
-            Фото{" "}
+            Фото &nbsp;
             <a
               href={frontmatter.imageAuthorLink}
               target="_blank"
@@ -32,7 +35,7 @@ export default function Template({
           <p>
             {frontmatter.tags.map(tag => (
               <Link key={tag} to={`https://marsdev.ru/${tag}`}>
-                [{tag}]
+                #{tag}
               </Link>
             ))}
           </p>
@@ -43,6 +46,22 @@ export default function Template({
           />
         </div>
         <h4>{frontmatter.date}</h4>
+        {frontmatter.prevPostName && (
+          <p>
+            Предыдущая статья{" "}
+            <Link to={frontmatter.prevPostLink}>
+              {frontmatter.prevPostName}
+            </Link>
+          </p>
+        )}
+        {frontmatter.nextPostName && (
+          <p>
+            Следующая статья{" "}
+            <Link to={frontmatter.nextPostLink}>
+              {frontmatter.nextPostName}
+            </Link>
+          </p>
+        )}
         <SharePost postLink={frontmatter.path} />
       </div>
     </Layout>
@@ -59,6 +78,10 @@ export const pageQuery = graphql`
         title
         subTitle
         tags
+        prevPostName
+        nextPostName
+        prevPostLink
+        nextPostLink
         featuredImage {
           childImageSharp {
             fluid(maxWidth: 1200) {
