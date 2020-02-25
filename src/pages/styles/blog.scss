@@ -37,7 +37,7 @@
 // tublet-portrait
 @media (min-width: 600px) and (orientation: portrait) {
     .blog-wrapper {
-        margin-top: 100px;
+        margin-top: 80px;
         width: 90%;
         margin-left: 5%;
         height: auto;
@@ -55,7 +55,7 @@
 // tablet-landscape
 @media (min-width: 900px) and (orientation: landscape) {
     .blog-wrapper {
-        margin-top: 140px;
+        margin-top: 130px;
         width: 80%;
         margin-left: 10%;
         height: auto;
@@ -80,7 +80,7 @@
 // desktop/laptop
 @media (min-width: 1200px) {
     .blog-wrapper {
-        margin-top: 150px;
+        margin-top: 130px;
         width: 80%;
         margin-left: 10%;
         height: auto;
@@ -105,7 +105,7 @@
 // desktop x-large
 @media (min-width: 1800px) {
     .blog-wrapper {
-        margin-top: 140px;
+        margin-top: 130px;
         width: 60%;
         margin-left: 20%;
         height: auto;

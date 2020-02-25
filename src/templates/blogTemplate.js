@@ -20,8 +20,8 @@ export default function Template({
     <Layout>
       <div className="blog-post-container">
         <div className="blog-post">
-          <Img fluid={featuredImgFluid} className="blog-post__image" />
           <h1>{frontmatter.title}</h1>
+          <Img fluid={featuredImgFluid} className="blog-post__image" />
           <p className="blog-post__image-author">
             Фото &nbsp;
             <a
