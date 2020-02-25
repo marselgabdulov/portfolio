@@ -9,8 +9,8 @@ imageAuthor: "Kane Reinholdtsen"
 imageAuthorLink: "https://unsplash.com/@kanereinholdtsen"
 prevPostName: "Часть 1. Организованное письмо"
 prevPostLink: "/blog/executive-writing-course-pt1"
-nextPostName: ""
-nextPostLink: ""
+nextPostName: "/blog/executive-writing-course-pt3"
+nextPostLink: "Часть 3. Говорящее письмо"
 ---
 
 Пишите формально или неформально, в зависимости от ситуации. Но пишите тем языком, который вы используете в речи. Это не призыв буквально копировать голосовую речь со всеми ее особенностями. Конечно же есть люди, которые говорят не лучше, чем пишут. Тем не менее, поскольку читатели слышат то, что читают, самое удачное письмо звучит как прямой разговор между людьми.
