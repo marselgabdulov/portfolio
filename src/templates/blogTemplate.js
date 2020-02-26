@@ -45,7 +45,7 @@ export default function Template({
             dangerouslySetInnerHTML={{ __html: html }}
           />
         </div>
-        <h4>{frontmatter.date}</h4>
+        <h4 className="blog-post__date">{frontmatter.date}</h4>
         {frontmatter.prevPostName && (
           <p>
             Предыдущая статья{" "}
