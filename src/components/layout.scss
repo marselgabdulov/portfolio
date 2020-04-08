@@ -2,8 +2,8 @@
 
 html,
 body {
-  font-family: 'IBM Plex Mono', monospace;
-  background-color: #FFFFFF;
+  font-family: "IBM Plex Mono", monospace;
+  background-color: #ffffff;
   height: 100%;
   margin: 0;
 }
@@ -153,5 +153,11 @@ body {
 
   p {
     font-size: 1em;
+  }
+
+  .gatsby-highlight {
+    font-size: 1.2em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
   }
 }
