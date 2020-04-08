@@ -12,7 +12,9 @@
   }
 
   .blog-post {
-    .blog-post__image {
+
+    .blog-post__image,
+    img {
       width: 100%;
       object-fit: cover;
     }
@@ -180,6 +182,7 @@
 
     margin-bottom: 5em;
   }
+
 }
 
 // desktop x-large
