@@ -13,9 +13,8 @@ export default function Template({
   const { frontmatter, html } = markdownRemark
   let featuredImgFluid = frontmatter.featuredImage.childImageSharp.fluid
 
-  useEffect(() => {
-    console.log(frontmatter.prevPostName)
-  }, [])
+  // useEffect(() => {
+  // }, [])
   return (
     <Layout>
       <div className="blog-post-container">

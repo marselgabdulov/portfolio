@@ -13,6 +13,7 @@ function BlogSidebar() {
         <Link to="/books">[books]</Link>
         <Link to="/soft-skills">[soft skills]</Link>
         <Link to="/translate">[translate]</Link>
+        <Link to="/javascript">[javascript]</Link>
       </p>
     </div>
   )
