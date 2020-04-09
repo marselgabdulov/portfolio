@@ -12,12 +12,22 @@
   }
 
   .blog-post {
-
-    .blog-post__image,
-    img {
+    .blog-post__image {
       width: 100%;
       object-fit: cover;
     }
+  }
+
+  table,
+  th,
+  td {
+    border: 1px solid black;
+  }
+
+  td,
+  th {
+    padding: 1em;
+    text-align: center;
   }
 }
 
@@ -36,6 +46,10 @@
     }
 
     .blog-post {
+      img {
+        width: 100%;
+        height: auto;
+      }
       .blog-post__image {
         height: 40vh;
       }
@@ -182,7 +196,6 @@
 
     margin-bottom: 5em;
   }
-
 }
 
 // desktop x-large

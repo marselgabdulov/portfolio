@@ -9,8 +9,8 @@ imageAuthor: "Paweł Czerwiński"
 imageAuthorLink: https://unsplash.com/@pawel_czerwinski"
 prevPostName: ""
 prevPostLink: ""
-nextPostName: ""
-nextPostLink: ""
+nextPostName: "Часть 2"
+nextPostLink: "/blog/70-javascript-interview-questions-pt2"
 ---
 
 Оригинал статьи [70 JavaScript Interview Questions](https://dev.to/macmacky/70-javascript-interview-questions-5gfi)
