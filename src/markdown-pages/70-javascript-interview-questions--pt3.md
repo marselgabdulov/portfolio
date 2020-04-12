@@ -9,11 +9,23 @@ imageAuthor: "Paweł Czerwiński"
 imageAuthorLink: https://unsplash.com/@pawel_czerwinski"
 prevPostName: "Часть 2"
 prevPostLink: "/blog/70-javascript-interview-questions-pt2"
-nextPostName: ""
-nextPostLink: ""
+nextPostName: "Часть 4"
+nextPostLink: "/blog/70-javascript-interview-questions-pt2"
 ---
 
 Оригинал статьи [70 JavaScript Interview Questions](https://dev.to/macmacky/70-javascript-interview-questions-5gfi)
+
+- [Часть 1](https://marsdev.ru/blog/70-javascript-interview-questions-pt1)
+
+- [Часть 2](https://marsdev.ru/blog/70-javascript-interview-questions-pt2)
+
+- [Часть 4](https://marsdev.ru/blog/70-javascript-interview-questions-pt4)
+
+- [Часть 5](https://marsdev.ru/blog/70-javascript-interview-questions-pt5)
+
+- [Часть 6](https://marsdev.ru/blog/70-javascript-interview-questions-pt6)
+
+- [Часть 7](https://marsdev.ru/blog/70-javascript-interview-questions-pt7)
 
 ###21. Какие значения являются ложными (falsy) в JavaScript ?
 

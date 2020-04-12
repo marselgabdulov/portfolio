@@ -7,13 +7,25 @@ tags: ["translate", "javascript"]
 featuredImage: ../images/blog-posts/js1.jpg
 imageAuthor: "Paweł Czerwiński"
 imageAuthorLink: https://unsplash.com/@pawel_czerwinski"
-prevPostName: ""
-prevPostLink: ""
+prevPostName: "Часть 7"
+prevPostLink: "/blog/70-javascript-interview-questions-pt7"
 nextPostName: "Часть 2"
 nextPostLink: "/blog/70-javascript-interview-questions-pt2"
 ---
 
 Оригинал статьи [70 JavaScript Interview Questions](https://dev.to/macmacky/70-javascript-interview-questions-5gfi)
+
+- [Часть 2](https://marsdev.ru/blog/70-javascript-interview-questions-pt2)
+
+- [Часть 3](https://marsdev.ru/blog/70-javascript-interview-questions-pt3)
+
+- [Часть 4](https://marsdev.ru/blog/70-javascript-interview-questions-pt4)
+
+- [Часть 5](https://marsdev.ru/blog/70-javascript-interview-questions-pt5)
+
+- [Часть 6](https://marsdev.ru/blog/70-javascript-interview-questions-pt6)
+
+- [Часть 7](https://marsdev.ru/blog/70-javascript-interview-questions-pt7)
 
 ###1. Отличие _undefined_ от _null_
 
