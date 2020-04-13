@@ -6,7 +6,7 @@ subTitle: "Часть 7."
 tags: ["translate", "javascript"]
 featuredImage: ../images/blog-posts/js7.jpg
 imageAuthor: "Paweł Czerwiński"
-imageAuthorLink: https://unsplash.com/@pawel_czerwinski"
+imageAuthorLink: "https://unsplash.com/@pawel_czerwinski"
 prevPostName: "Часть 6"
 prevPostLink: "/blog/70-javascript-interview-questions-pt6"
 nextPostName: "Часть 1"
