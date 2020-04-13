@@ -12,8 +12,9 @@ function BlogSidebar() {
       <p className="blog-sidebar__tags">
         <Link to="/books">[books]</Link>
         <Link to="/soft-skills">[soft skills]</Link>
-        <Link to="/translate">[translate]</Link>
+        <Link to="/react">[react]</Link>
         <Link to="/javascript">[javascript]</Link>
+        <Link to="/translate">[translate]</Link>
       </p>
     </div>
   )
