@@ -22,26 +22,6 @@ function ContactsPage({ isEnglish }) {
             <a href="https://telegram.me/marsgabdulov">@marsgabdulov</a>
           </p>
           <p className="contacts-page__item">
-            <b>Instagram: </b>
-            <a
-              href="https://www.instagram.com/marsel_gabdulov/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              marsel_gabdulov
-            </a>
-          </p>
-          <p className="contacts-page__item">
-            <b>Facebook: </b>
-            <a
-              href="https://www.facebook.com/marsel.gabdulov"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              marsel.gabdulov
-            </a>
-          </p>
-          <p className="contacts-page__item">
             <b>Github: </b>
             <a
               href="https://github.com/marselgabdulov"
