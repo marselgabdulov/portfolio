@@ -1,12 +1,9 @@
 ---
 path: "/blog/70-javascript-interview-questions-pt7"
 date: "2020-04-14"
-title: "70 вопросов по JavaScript для собеседования"
+title: "70 вопросов собеседования JavaScript."
 subTitle: "Часть 7."
 tags: ["translate", "javascript"]
-featuredImage: ../images/blog-posts/js7.jpg
-imageAuthor: "Paweł Czerwiński"
-imageAuthorLink: "https://unsplash.com/@pawel_czerwinski"
 prevPostName: "Часть 6"
 prevPostLink: "/blog/70-javascript-interview-questions-pt6"
 nextPostName: "Часть 1"

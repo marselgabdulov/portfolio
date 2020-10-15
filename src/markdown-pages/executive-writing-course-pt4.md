@@ -1,12 +1,9 @@
 ---
 path: "/blog/executive-writing-course-pt4"
 date: "2020-02-26"
-title: "Курс административного письма (Академия ВВС США)"
-subTitle: "Часть 4. Активное письмо"
+title: "Курс административного письма (Академия ВВС США)."
+subTitle: "Часть 4. Активное письмо."
 tags: ["translate", "soft-skills"]
-featuredImage: ../images/blog-posts/mail4.jpg
-imageAuthor: "Braden Collum"
-imageAuthorLink: "https://unsplash.com/@bradencollum"
 prevPostName: "Часть 3. Краткое письмо"
 prevPostLink: "/blog/executive-writing-course-pt3"
 nextPostName: ""

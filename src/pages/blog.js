@@ -24,10 +24,7 @@ const BlogPage = ({
     <Layout>
       <SEO title="Блог" />
       <div className="blog-wrapper">
-        <div className="blog__posts">
-          <h1>Все статьи</h1>
-          {Posts}
-        </div>
+        <div className="blog__posts">{Posts}</div>
         <BlogSidebar />
       </div>
     </Layout>

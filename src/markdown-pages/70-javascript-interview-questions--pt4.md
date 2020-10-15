@@ -1,12 +1,9 @@
 ---
 path: "/blog/70-javascript-interview-questions-pt4"
 date: "2020-04-11"
-title: "70 вопросов по JavaScript для собеседования"
+title: "70 вопросов собеседования JavaScript."
 subTitle: "Часть 4."
 tags: ["translate", "javascript"]
-featuredImage: ../images/blog-posts/js4.jpg
-imageAuthor: "Paweł Czerwiński"
-imageAuthorLink: "https://unsplash.com/@pawel_czerwinski"
 prevPostName: "Часть 3"
 prevPostLink: "/blog/70-javascript-interview-questions-pt3"
 nextPostName: "Часть 5"

@@ -1,16 +1,13 @@
 ---
 path: "/blog/react-state-classes"
 date: "2020-04-15"
-title: " Управление состоянием в React."
+title: "Управление состоянием React."
 subTitle: "Часть 1. Классовые компоненты."
-tags: ["translate", "javascript", "react"]
-featuredImage: ../images/blog-posts/react-classes.jpg
-imageAuthor: "Eberhard Grossgasteiger"
-imageAuthorLink: "https://unsplash.com/@eberhardgross"
+tags: ["translate", "javascript", "react", "summary"]
 prevPostName: "Вопросы собеседования JavaScript. Часть 7."
 prevPostLink: "/blog/70-javascript-interview-questions-pt7"
-nextPostName: ""
-nextPostLink: ""
+nextPostName: "Управление состоянием в React. Хуки"
+nextPostLink: "/blog/react-state-hooks"
 ---
 
 Я надеюсь, что читатель хоть немного знаком с React и способен создать болванку с помощью **create-react-app**.
@@ -134,7 +131,7 @@ increment() {
 
 В консоль выведется **0**. Это связано с тем, что метод **setState()** работает асинхронно. Подробнее об этом можно узнать из [документации.](https://ru.reactjs.org/docs/faq-state.html#when-is-setstate-asynchronous)
 
-Но в **DOM** выведется единица **1**. Это происходит потому, что метод **setState()** объединяет объект состояния с вновь созданным объектом, в котором объеденены все попытки обновить состояние.
+Но шаг прибавления все ще будет равен единице. Это происходит потому, что метод **setState()** объединяет объект состояния с вновь созданным объектом, в котором объеденены все попытки обновить состояние.
 
 ```javascript
 Object.assign(

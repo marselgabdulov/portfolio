@@ -1,12 +1,9 @@
 ---
 path: "/blog/executive-writing-course-pt2"
 date: "2020-02-20"
-title: "Курс административного письма (Академия ВВС США)"
-subTitle: "Часть 2. Говорящее письмо"
+title: "Курс административного письма (Академия ВВС США)."
+subTitle: "Часть 2. Говорящее письмо."
 tags: ["translate", "soft-skills"]
-featuredImage: ../images/blog-posts/speak.jpg
-imageAuthor: "Kane Reinholdtsen"
-imageAuthorLink: "https://unsplash.com/@kanereinholdtsen"
 prevPostName: "Часть 1. Организованное письмо"
 prevPostLink: "/blog/executive-writing-course-pt1"
 nextPostName: "Часть 3. Краткое письмо"

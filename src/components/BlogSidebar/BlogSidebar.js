@@ -15,7 +15,7 @@ function BlogSidebar() {
         <Link to="/react">[react]</Link>
         <Link to="/javascript">[javascript]</Link>
         <Link to="/translate">[translate]</Link>
-        <Link to="/summary">[конспекты]</Link>
+        <Link to="/summary">[summary]</Link>
       </p>
     </div>
   )

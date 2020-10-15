@@ -1,9 +1,8 @@
-import React, { useEffect } from "react"
+import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SharePost from "../components/SharePost/SharePost"
 import "./blogTemplate.scss"
-import Img from "gatsby-image"
 import { Link } from "gatsby"
 
 export default function Template({
@@ -11,26 +10,13 @@ export default function Template({
 }) {
   const { markdownRemark } = data // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark
-  let featuredImgFluid = frontmatter.featuredImage.childImageSharp.fluid
 
-  // useEffect(() => {
-  // }, [])
   return (
     <Layout>
       <div className="blog-post-container">
         <div className="blog-post">
           <h1>{frontmatter.title}</h1>
-          <Img fluid={featuredImgFluid} className="blog-post__image" />
-          <p className="blog-post__image-author">
-            Фото &nbsp;
-            <a
-              href={frontmatter.imageAuthorLink}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {frontmatter.imageAuthor}
-            </a>
-          </p>
+          <h2>{frontmatter.subTitle}</h2>
           <p>
             {frontmatter.tags.map(tag => (
               <Link key={tag} to={`https://marsdev.ru/${tag}`}>
@@ -38,7 +24,6 @@ export default function Template({
               </Link>
             ))}
           </p>
-          <h2>{frontmatter.subTitle}</h2>
           <div
             className="blog-post-content"
             dangerouslySetInnerHTML={{ __html: html }}

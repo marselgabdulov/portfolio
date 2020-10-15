@@ -1,12 +1,9 @@
 ---
 path: "/blog/executive-writing-course-pt3"
 date: "2020-02-25"
-title: "Курс административного письма (Академия ВВС США)"
-subTitle: "Часть 3. Краткое письмо"
+title: "Курс административного письма (Академия ВВС США)."
+subTitle: "Часть 3. Краткое письмо."
 tags: ["translate", "soft-skills"]
-featuredImage: ../images/blog-posts/mail3.jpg
-imageAuthor: "Aaron Burden"
-imageAuthorLink: "https://unsplash.com/@aaronburden"
 prevPostName: "Часть 2. Говорящее письмо"
 prevPostLink: "/blog/executive-writing-course-pt2"
 nextPostName: ""

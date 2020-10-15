@@ -1,12 +1,9 @@
 ---
 path: "/blog/executive-writing-course-pt1"
 date: "2020-02-19"
-title: "Курс административного письма (Академия ВВС США)"
-subTitle: "Часть 1. Организованное письмо"
+title: "Курс административного письма (Академия ВВС США)."
+subTitle: "Часть 1. Организованное письмо."
 tags: ["translate", "soft-skills"]
-featuredImage: ../images/blog-posts/mail.jpg
-imageAuthor: "Liam Truong"
-imageAuthorLink: "https://unsplash.com/@liamtruong"
 prevPostName: ""
 prevPostLink: ""
 nextPostName: "Часть 2. Говорящее письмо"

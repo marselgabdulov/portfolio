@@ -1,50 +1,19 @@
 .post-description {
   position: relative;
-  color: white;
+  height: auto;
 
   a {
-    color: white;
+    color: blue;
+    text-decoration: underline;
   }
 
-  .post__date {
-    position: absolute;
-    font-weight: bold;
-  }
-
-  .post__title {
-    position: absolute;
-    left: 5%;
-    height: auto;
-    line-height: 1.5em;
-    text-shadow: 2px 0 0 #050505, 0 2px 0 #050505;
-  }
-
-  .post__image {
-    margin-top: 1em;
-    object-fit: cover;
-
-    height: 100%;
-    opacity: 0.9;
-    filter: brightness(0.75);
-    transition: all 0.3s ease-in-out;
-
-    &:hover {
-      opacity: 1;
-      filter: brightness(1);
-    }
-  }
 }
 
 // mobile-portrait
 @media (max-width: 599px) and (orientation: portrait) {
   .post-description {
     width: 100%;
-    height: 250px;
     margin-bottom: 2em;
-
-    .post__image {
-      width: 100%;
-    }
 
     .post__date {
       top: 90%;
@@ -73,12 +42,7 @@
 @media (min-width: 600px) and (orientation: portrait) {
   .post-description {
     width: 100%;
-    height: 350px;
     margin-bottom: 2em;
-
-    .post__image {
-      width: 100%;
-    }
 
     .post__date {
       top: 90%;
@@ -107,12 +71,7 @@
 @media (min-width: 900px) and (orientation: landscape) {
   .post-description {
     width: 100%;
-    height: 300px;
-    margin-bottom: 2em;
-
-    .post__image {
-      width: 80%;
-    }
+    margin-bottom: 1.5em;
 
     .post__date {
       top: 90%;
@@ -140,13 +99,6 @@
 @media (min-width: 1200px) {
   .post-description {
     width: 100%;
-    height: 350px;
-    margin-bottom: 3em;
-
-    .post__image {
-      width: 80%;
-    }
-
     .post__date {
       top: 85%;
       left: 5%;
@@ -171,12 +123,6 @@
 @media (min-width: 1800px) {
   .post-description {
     width: 100%;
-    height: 350px;
-    margin-bottom: 3em;
-
-    .post__image {
-      width: 80%;
-    }
 
     .post__date {
       top: 85%;
