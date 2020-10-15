@@ -37,6 +37,14 @@
     right: 14.5%;
     width: 250px;
 
+    .blog-sidebar__tags {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 250px;
+      height: auto;
+    }
+
     p {
       margin-top: 0;
       font-size: 1em;
@@ -68,6 +76,7 @@
     p {
       margin-top: 0;
       font-size: 1em;
+      width: 250px;
     }
   }
 }

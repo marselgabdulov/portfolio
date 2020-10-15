@@ -8,15 +8,15 @@ function BlogSidebar() {
       <p>
         Здесь обо всем, что мне интересно и в чем мне бы хотелось разобраться.
       </p>
-      <p>Рубрики: </p>
-      <p className="blog-sidebar__tags">
-        <Link to="/books">[books]</Link>
-        <Link to="/soft-skills">[soft skills]</Link>
-        <Link to="/react">[react]</Link>
-        <Link to="/javascript">[javascript]</Link>
-        <Link to="/translate">[translate]</Link>
-        <Link to="/summary">[summary]</Link>
-      </p>
+      <p>Категории: </p>
+      <div className="blog-sidebar__tags">
+        <Link to="/books">#books</Link>
+        <Link to="/javascript">#javascript</Link>
+        <Link to="/react">#react</Link>
+        <Link to="/soft-skills">#soft_skills</Link>
+        <Link to="/summary">#summary</Link>
+        <Link to="/translate">#translate</Link>
+      </div>
     </div>
   )
 }
